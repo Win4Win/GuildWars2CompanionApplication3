@@ -113,4 +113,47 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:text="YOUR_NAME" />
 
+    <Button
+        android:id="@+id/companion"
+        android:layout_width="76dp"
+        android:layout_height="69dp"
+        android:text="Button"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="498dp" />
+
+
+    <Button
+        android:id="@+id/heroPanel"
+        android:layout_width="76dp"
+        android:layout_height="69dp"
+        android:text="Button"
+        tools:layout_editor_absoluteX="76dp"
+        tools:layout_editor_absoluteY="498dp" />
+
+
+    <Button
+        android:id="@+id/forums"
+        android:layout_width="76dp"
+        android:layout_height="69dp"
+        android:text="Button"
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="498dp" />
+
+    <Button
+        android:id="@+id/more"
+        android:layout_width="76dp"
+        android:layout_height="69dp"
+        android:text="Button"
+        tools:layout_editor_absoluteX="308dp"
+        tools:layout_editor_absoluteY="498dp" />
+
+    <Button
+        android:id="@+id/wvw"
+        android:layout_width="76dp"
+        android:layout_height="69dp"
+        android:text="Button"
+        tools:layout_editor_absoluteX="232dp"
+        tools:layout_editor_absoluteY="498dp" />
+
+
 </android.support.constraint.ConstraintLayout>
