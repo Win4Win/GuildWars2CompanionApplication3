@@ -7,6 +7,27 @@
     android:background="@drawable/background">
 
 
+    <ImageView
+        android:id="@+id/topView"
+        android:layout_width="386dp"
+        android:layout_height="47dp"
+        app:layout_constraintBottom_toTopOf="@+id/view_holder1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@color/lightBack" />
+
+    <ImageView
+        android:id="@+id/iconsView"
+        android:layout_width="383dp"
+        android:layout_height="69dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tab1View"
+        app:srcCompat="@color/lightBack" />
+
     <HorizontalScrollView
         android:id="@+id/view_holder1"
         android:layout_width="387dp"
@@ -25,7 +46,75 @@
 
 
             <ImageButton
-                android:id="@+id/imageButton"
+                android:id="@+id/news1"
+                android:layout_width="290dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#0000"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/temp1" />
+
+            <ImageView
+                android:id="@+id/space1"
+                android:layout_width="12dp"
+                android:layout_height="239dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/spacing"
+                tools:layout_editor_absoluteX="288dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <ImageButton
+                android:id="@+id/news2"
+                android:layout_width="290dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#0000"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/temp3" />
+
+            <ImageView
+                android:id="@+id/space2"
+                android:layout_width="12dp"
+                android:layout_height="239dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/spacing"
+                tools:layout_editor_absoluteX="288dp"
+                tools:layout_editor_absoluteY="0dp" />
+            <ImageButton
+                android:id="@+id/news3"
+                android:layout_width="290dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#0000"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/temp1" />
+            <ImageView
+                android:id="@+id/space3"
+                android:layout_width="12dp"
+                android:layout_height="239dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/spacing"
+                tools:layout_editor_absoluteX="288dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <ImageButton
+                android:id="@+id/news4"
+                android:layout_width="290dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#0000"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/temp3" />
+            <ImageView
+                android:id="@+id/space4"
+                android:layout_width="12dp"
+                android:layout_height="239dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/spacing"
+                tools:layout_editor_absoluteX="288dp"
+                tools:layout_editor_absoluteY="0dp" />
+            <ImageButton
+                android:id="@+id/news5"
                 android:layout_width="290dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -57,7 +146,7 @@
                 android:id="@+id/Milestone"
                 android:layout_width="130dp"
                 android:layout_height="match_parent"
-                android:background="@drawable/background"
+                android:background="@drawable/selected2"
                 android:text="MILESTONES"
                 android:textColor="@android:color/background_light" />
 
@@ -65,7 +154,7 @@
                 android:id="@+id/Achievements"
                 android:layout_width="130dp"
                 android:layout_height="match_parent"
-                android:background="@drawable/background"
+                android:background="@drawable/lighterbackground"
                 android:text="ACHIEVEMENTS"
                 android:textColor="@android:color/background_light" />
 
@@ -74,23 +163,23 @@
                 android:id="@+id/Blogs"
                 android:layout_width="130dp"
                 android:layout_height="match_parent"
-                android:background="@drawable/background"
+                android:background="@drawable/lighterbackground"
                 android:text="BLOGS"
                 android:textColor="@android:color/background_light" />
 
             <Button
-                android:id="@+id/Tempholder"
+                android:id="@+id/TempHolder1"
                 android:layout_width="130dp"
                 android:layout_height="match_parent"
-                android:background="@drawable/background"
+                android:background="@drawable/lighterbackground"
                 android:text="TEMPHOLDER"
                 android:textColor="@android:color/background_light" />
 
             <Button
-                android:id="@+id/TempHolder"
+                android:id="@+id/TempHolder2"
                 android:layout_width="130dp"
                 android:layout_height="match_parent"
-                android:background="@drawable/background"
+                android:background="@drawable/lighterbackground"
                 android:nestedScrollingEnabled="false"
                 android:text="TEMPHOLDER"
                 android:textColor="@android:color/background_light" />
@@ -103,7 +192,7 @@
         android:layout_width="120dp"
         android:layout_height="47dp"
         android:gravity="center"
-        android:text="TextView"
+        android:text="YOUR_NAME"
         android:textAlignment="center"
         android:textColor="@android:color/background_light"
         android:textStyle="bold"
@@ -117,43 +206,95 @@
         android:id="@+id/companion"
         android:layout_width="76dp"
         android:layout_height="69dp"
-        android:text="Button"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="498dp" />
+        android:background="@drawable/companion2"
+        android:gravity="bottom|center"
+        android:text="Companion"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/heroPanel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tab1View"
+        tools:text="Companion" />
 
 
     <Button
         android:id="@+id/heroPanel"
         android:layout_width="76dp"
         android:layout_height="69dp"
-        android:text="Button"
-        tools:layout_editor_absoluteX="76dp"
-        tools:layout_editor_absoluteY="498dp" />
-
+        android:background="@drawable/gear1"
+        android:gravity="bottom|center"
+        android:text="Hero Panel"
+        android:textAllCaps="false"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/forums"
+        app:layout_constraintTop_toBottomOf="@+id/tab1View"
+        tools:text="Hero Panel" />
 
     <Button
         android:id="@+id/forums"
         android:layout_width="76dp"
         android:layout_height="69dp"
-        android:text="Button"
-        tools:layout_editor_absoluteX="154dp"
-        tools:layout_editor_absoluteY="498dp" />
+        android:background="@drawable/gw2forums1"
+        android:gravity="bottom|center"
+        android:text="Forums"
+        android:textAllCaps="false"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/wvw"
+        app:layout_constraintTop_toBottomOf="@+id/tab1View"
+        tools:text="Forums" />
+
+    <Button
+        android:id="@+id/wvw"
+        android:layout_width="76dp"
+        android:layout_height="65dp"
+        android:background="@drawable/wvw1"
+        android:gravity="bottom|center"
+        android:text="WvW"
+        android:textAllCaps="false"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/more"
+        app:layout_constraintTop_toBottomOf="@+id/tab1View"
+        app:layout_constraintVertical_bias="0.2"
+        tools:text="WvW" />
+
 
     <Button
         android:id="@+id/more"
         android:layout_width="76dp"
         android:layout_height="69dp"
-        android:text="Button"
-        tools:layout_editor_absoluteX="308dp"
-        tools:layout_editor_absoluteY="498dp" />
+        android:background="@drawable/more1"
+        android:gravity="bottom|center"
+        android:text="More"
+        android:textAllCaps="false"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tab1View"
+        app:layout_constraintVertical_bias="1.0"
+        tools:text="More" />
 
-    <Button
-        android:id="@+id/wvw"
-        android:layout_width="76dp"
-        android:layout_height="69dp"
-        android:text="Button"
-        tools:layout_editor_absoluteX="232dp"
-        tools:layout_editor_absoluteY="498dp" />
+    <ScrollView
+        android:id="@+id/tab1View"
+        android:layout_width="389dp"
+        android:layout_height="203dp"
+        app:layout_constraintBottom_toTopOf="@+id/iconsView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_holder2">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
 
 </android.support.constraint.ConstraintLayout>
