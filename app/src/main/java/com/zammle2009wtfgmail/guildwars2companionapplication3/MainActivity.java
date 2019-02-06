@@ -1,5 +1,6 @@
 package com.zammle2009wtfgmail.guildwars2companionapplication3;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -139,21 +140,21 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        final Button hero = (Button) findViewById(R.id.heroPanel1);
+        final Button hero = (Button) findViewById(R.id.heroPanel);
         hero.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)
             {
-                /**
-                 Intent history = new Intent (MainActivity.this, History.class );
+
+                 Intent history = new Intent (MainActivity.this, heroPanels.class );
                  startActivity(history);
-                 **/
+
             }
 
         });
 
-        final Button forums = (Button) findViewById(R.id.forums1);
+        final Button forums = (Button) findViewById(R.id.forums);
         forums.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -167,7 +168,7 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
-        final Button WvW = (Button) findViewById(R.id.wvw1);
+        final Button WvW = (Button) findViewById(R.id.wvw);
         WvW.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -181,7 +182,7 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
-        final Button more = (Button) findViewById(R.id.more1);
+        final Button more = (Button) findViewById(R.id.more);
         more.setOnClickListener(new View.OnClickListener()
         {
             @Override
