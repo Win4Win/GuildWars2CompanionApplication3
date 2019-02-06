@@ -9,15 +9,13 @@
 
     <HorizontalScrollView
         android:id="@+id/view_holder1"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="387dp"
+        android:layout_height="187dp"
         android:scrollbars="none"
         app:layout_constraintBottom_toTopOf="@+id/view_holder2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintTop_toBottomOf="@+id/YourName"
         tools:scrollbarAlwaysDrawHorizontalTrack="false">
 
         <LinearLayout
@@ -42,12 +40,11 @@
         android:id="@+id/view_holder2"
         android:layout_width="0dp"
         android:layout_height="60dp"
-        android:layout_marginBottom="302dp"
         android:scrollbars="none"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_holder1"
         tools:scrollbarAlwaysDrawHorizontalTrack="false">
 
         <LinearLayout
@@ -100,5 +97,20 @@
         </LinearLayout>
 
     </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/YourName"
+        android:layout_width="120dp"
+        android:layout_height="47dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/view_holder1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="YOUR_NAME" />
 
 </android.support.constraint.ConstraintLayout>
