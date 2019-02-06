@@ -1,12 +1,11 @@
 package com.zammle2009wtfgmail.guildwars2companionapplication3;
 
-import android.content.Intent;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.ScrollView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -33,6 +32,13 @@ public class MainActivity extends AppCompatActivity {
                 blogs.setBackgroundResource(R.drawable.lighterbackground);
                 temp1.setBackgroundResource(R.drawable.lighterbackground);
                 temp2.setBackgroundResource(R.drawable.lighterbackground);
+
+
+                milestone.setTextColor(Color.parseColor("#FFFFFF"));
+                achievements.setTextColor(Color.parseColor("#A0A0A0"));
+                blogs.setTextColor(Color.parseColor("#A0A0A0"));
+                temp1.setTextColor(Color.parseColor("#A0A0A0"));
+                temp2.setTextColor(Color.parseColor("#A0A0A0"));
             }
 
 
@@ -46,6 +52,12 @@ public class MainActivity extends AppCompatActivity {
                 blogs.setBackgroundResource(R.drawable.lighterbackground);
                 temp1.setBackgroundResource(R.drawable.lighterbackground);
                 temp2.setBackgroundResource(R.drawable.lighterbackground);
+
+                milestone.setTextColor(Color.parseColor("#A0A0A0"));
+                achievements.setTextColor(Color.parseColor("#FFFFFF"));
+                blogs.setTextColor(Color.parseColor("#A0A0A0"));
+                temp1.setTextColor(Color.parseColor("#A0A0A0"));
+                temp2.setTextColor(Color.parseColor("#A0A0A0"));
             }
 
 
@@ -59,6 +71,12 @@ public class MainActivity extends AppCompatActivity {
                 blogs.setBackgroundResource(R.drawable.selected2);
                 temp1.setBackgroundResource(R.drawable.lighterbackground);
                 temp2.setBackgroundResource(R.drawable.lighterbackground);
+
+                milestone.setTextColor(Color.parseColor("#A0A0A0"));
+                achievements.setTextColor(Color.parseColor("#A0A0A0"));
+                blogs.setTextColor(Color.parseColor("#FFFFFF"));
+                temp1.setTextColor(Color.parseColor("#A0A0A0"));
+                temp2.setTextColor(Color.parseColor("#A0A0A0"));
             }
 
 
@@ -73,6 +91,12 @@ public class MainActivity extends AppCompatActivity {
                 blogs.setBackgroundResource(R.drawable.lighterbackground);
                 temp1.setBackgroundResource(R.drawable.selected2);
                 temp2.setBackgroundResource(R.drawable.lighterbackground);
+
+                milestone.setTextColor(Color.parseColor("#A0A0A0"));
+                achievements.setTextColor(Color.parseColor("#A0A0A0"));
+                blogs.setTextColor(Color.parseColor("#A0A0A0"));
+                temp1.setTextColor(Color.parseColor("#FFFFFF"));
+                temp2.setTextColor(Color.parseColor("#A0A0A0"));
             }
 
 
@@ -86,6 +110,13 @@ public class MainActivity extends AppCompatActivity {
                 blogs.setBackgroundResource(R.drawable.lighterbackground);
                 temp1.setBackgroundResource(R.drawable.lighterbackground);
                 temp2.setBackgroundResource(R.drawable.selected2);
+
+
+                milestone.setTextColor(Color.parseColor("#A0A0A0"));
+                achievements.setTextColor(Color.parseColor("#A0A0A0"));
+                blogs.setTextColor(Color.parseColor("#A0A0A0"));
+                temp1.setTextColor(Color.parseColor("#A0A0A0"));
+                temp2.setTextColor(Color.parseColor("#FFFFFF"));
             }
 
 
@@ -108,7 +139,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        final Button hero = (Button) findViewById(R.id.heroPanel);
+        final Button hero = (Button) findViewById(R.id.heroPanel1);
         hero.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -122,7 +153,7 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
-        final Button forums = (Button) findViewById(R.id.forums);
+        final Button forums = (Button) findViewById(R.id.forums1);
         forums.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -136,7 +167,7 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
-        final Button WvW = (Button) findViewById(R.id.wvw);
+        final Button WvW = (Button) findViewById(R.id.wvw1);
         WvW.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -150,7 +181,7 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
-        final Button more = (Button) findViewById(R.id.more);
+        final Button more = (Button) findViewById(R.id.more1);
         more.setOnClickListener(new View.OnClickListener()
         {
             @Override

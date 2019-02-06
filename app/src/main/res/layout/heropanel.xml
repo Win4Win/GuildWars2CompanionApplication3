@@ -7,8 +7,86 @@
     android:background="@drawable/background">
 
 
+    <TextView
+        android:id="@+id/YourName"
+        android:layout_width="120dp"
+        android:layout_height="47dp"
+        android:gravity="center"
+        android:text="YOUR_NAME"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/view_holder1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="YOUR_NAME" />
+
+    <HorizontalScrollView
+        android:id="@+id/hero_view_holder"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="47dp"
+        tools:scrollbarAlwaysDrawHorizontalTrack="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/gear"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/selected2"
+                android:text="GEAR"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:id="@+id/traits"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/lighterbackground"
+                android:text="TRAITS"
+                android:textColor="@android:color/darker_gray" />
+
+
+            <Button
+                android:id="@+id/Blogs"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/lighterbackground"
+                android:text="BLOGS"
+                android:textColor="@android:color/darker_gray" />
+
+            <Button
+                android:id="@+id/TempHolder1"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/lighterbackground"
+                android:text="TEMPHOLDER"
+                android:textColor="@android:color/darker_gray" />
+
+            <Button
+                android:id="@+id/TempHolder2"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/lighterbackground"
+                android:nestedScrollingEnabled="false"
+                android:text="TEMPHOLDER"
+                android:textColor="@android:color/darker_gray" />
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
     <ImageView
-        android:id="@+id/iconsView"
+        android:id="@+id/iconsView1"
 
         android:layout_width="383dp"
         android:layout_height="69dp"
@@ -18,35 +96,35 @@
 
 
     <Button
-        android:id="@+id/companion"
+        android:id="@+id/companion1"
         android:layout_width="76dp"
         android:layout_height="69dp"
         android:background="@drawable/companion3"
         android:gravity="bottom|center"
         android:text="Companion"
         android:textAllCaps="false"
-        android:textColor="@android:color/background_light"
+        android:textColor="@android:color/darker_gray"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:text="Companion" />
 
     <Button
-        android:id="@+id/heroPanel"
+        android:id="@+id/heroPanel1"
         android:layout_width="76dp"
         android:layout_height="69dp"
         android:background="@drawable/gear2"
         android:gravity="bottom|center"
         android:text="Hero Panel"
         android:textAllCaps="false"
-        android:textColor="@android:color/darker_gray"
+        android:textColor="@android:color/background_light"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/forums"
+        app:layout_constraintEnd_toStartOf="@+id/forums1"
         tools:text="Hero Panel" />
 
     <Button
-        android:id="@+id/forums"
+        android:id="@+id/forums1"
         android:layout_width="76dp"
         android:layout_height="69dp"
         android:background="@drawable/gw2forums1"
@@ -56,11 +134,11 @@
         android:textColor="@android:color/darker_gray"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/wvw"
+        app:layout_constraintEnd_toStartOf="@+id/wvw1"
         tools:text="Forums" />
 
     <Button
-        android:id="@+id/wvw"
+        android:id="@+id/wvw1"
         android:layout_width="76dp"
         android:layout_height="69dp"
         android:background="@drawable/wvw1"
@@ -70,12 +148,12 @@
         android:textColor="@android:color/darker_gray"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/more"
+        app:layout_constraintEnd_toStartOf="@+id/more1"
         tools:text="WvW" />
 
 
     <Button
-        android:id="@+id/more"
+        android:id="@+id/more1"
         android:layout_width="76dp"
         android:layout_height="69dp"
         android:background="@drawable/more1"

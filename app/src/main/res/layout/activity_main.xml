@@ -18,7 +18,7 @@
         app:srcCompat="@color/lightBack" />
 
     <ImageView
-        android:id="@+id/iconsView"
+        android:id="@+id/iconsView1"
         android:layout_width="383dp"
         android:layout_height="69dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -33,7 +33,7 @@
         android:layout_width="387dp"
         android:layout_height="187dp"
         android:scrollbars="none"
-        app:layout_constraintBottom_toTopOf="@+id/view_holder2"
+        app:layout_constraintBottom_toTopOf="@+id/hero_view_holder"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/YourName"
@@ -126,7 +126,7 @@
     </HorizontalScrollView>
 
     <HorizontalScrollView
-        android:id="@+id/view_holder2"
+        android:id="@+id/hero_view_holder"
         android:layout_width="0dp"
         android:layout_height="60dp"
         android:scrollbars="none"
@@ -156,7 +156,7 @@
                 android:layout_height="match_parent"
                 android:background="@drawable/lighterbackground"
                 android:text="ACHIEVEMENTS"
-                android:textColor="@android:color/background_light" />
+                android:textColor="@android:color/darker_gray" />
 
 
             <Button
@@ -165,7 +165,7 @@
                 android:layout_height="match_parent"
                 android:background="@drawable/lighterbackground"
                 android:text="BLOGS"
-                android:textColor="@android:color/background_light" />
+                android:textColor="@android:color/darker_gray" />
 
             <Button
                 android:id="@+id/TempHolder1"
@@ -173,7 +173,7 @@
                 android:layout_height="match_parent"
                 android:background="@drawable/lighterbackground"
                 android:text="TEMPHOLDER"
-                android:textColor="@android:color/background_light" />
+                android:textColor="@android:color/darker_gray" />
 
             <Button
                 android:id="@+id/TempHolder2"
@@ -182,7 +182,7 @@
                 android:background="@drawable/lighterbackground"
                 android:nestedScrollingEnabled="false"
                 android:text="TEMPHOLDER"
-                android:textColor="@android:color/background_light" />
+                android:textColor="@android:color/darker_gray" />
         </LinearLayout>
 
     </HorizontalScrollView>
@@ -206,10 +206,10 @@
         android:id="@+id/tab1View"
         android:layout_width="389dp"
         android:layout_height="203dp"
-        app:layout_constraintBottom_toTopOf="@+id/iconsView"
+        app:layout_constraintBottom_toTopOf="@+id/iconsView1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view_holder2">
+        app:layout_constraintTop_toBottomOf="@+id/hero_view_holder">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -228,7 +228,7 @@
         android:textColor="@android:color/background_light"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/heroPanel"
+        app:layout_constraintEnd_toStartOf="@+id/heroPanel1"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tab1View"
@@ -237,7 +237,7 @@
 
 
     <Button
-        android:id="@+id/heroPanel"
+        android:id="@+id/heroPanel1"
         android:layout_width="76dp"
         android:layout_height="69dp"
         android:background="@drawable/gear1"
@@ -247,12 +247,12 @@
         android:textColor="@android:color/darker_gray"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/forums"
+        app:layout_constraintEnd_toStartOf="@+id/forums1"
         app:layout_constraintTop_toBottomOf="@+id/tab1View"
         tools:text="Hero Panel" />
 
     <Button
-        android:id="@+id/forums"
+        android:id="@+id/forums1"
         android:layout_width="76dp"
         android:layout_height="69dp"
         android:background="@drawable/gw2forums1"
@@ -262,12 +262,12 @@
         android:textColor="@android:color/darker_gray"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/wvw"
+        app:layout_constraintEnd_toStartOf="@+id/wvw1"
         app:layout_constraintTop_toBottomOf="@+id/tab1View"
         tools:text="Forums" />
 
     <Button
-        android:id="@+id/wvw"
+        android:id="@+id/wvw1"
         android:layout_width="76dp"
         android:layout_height="69dp"
         android:background="@drawable/wvw1"
@@ -277,14 +277,14 @@
         android:textColor="@android:color/darker_gray"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/more"
+        app:layout_constraintEnd_toStartOf="@+id/more1"
         app:layout_constraintTop_toBottomOf="@+id/tab1View"
         app:layout_constraintVertical_bias="0.2"
         tools:text="WvW" />
 
 
     <Button
-        android:id="@+id/more"
+        android:id="@+id/more1"
         android:layout_width="76dp"
         android:layout_height="69dp"
         android:background="@drawable/more1"
