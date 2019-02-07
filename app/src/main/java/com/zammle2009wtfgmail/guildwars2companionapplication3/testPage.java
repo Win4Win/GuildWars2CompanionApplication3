@@ -20,20 +20,21 @@ public class testPage extends AppCompatActivity {
 
 
 
-    static    String urls=new String();
+    static String urls="";
 
-    static String[] id_;
-    static String[] name_;
-    static String[] age_;
-    static String[] world;
-    static String[] guilds_;
-    static String[] guildLeader_;
-    static String[] created_;
-    static String[] access_;
-    static String[] commander_;
-    static String[] fractalLevel_;
-    static String[] dailyAp_;
-    static String[] monthlyAp_;
+    static String[] id_ = new String[2];
+    static String[] name_ = new String[2];
+    static String[] age_ = new String[2];
+    static String[] world = new String[2];
+    static String[] guilds_ = new String[6];
+    static String[] guildLeader_= new String[6];
+    static String[] created_ = new String[2];
+    static String[] access_ = new String[4];
+    static String[] commander_ = new String[2];
+    static String[] fractalLevel_ = new String[2];
+    static String[] dailyAp_ = new String[2];
+    static String[] monthlyAp_ = new String[2];
+    static String[] wvwRank_= new String[2];
 
 
 
@@ -91,18 +92,141 @@ public class testPage extends AppCompatActivity {
                         urls = urls.replace(",", "");
                         urls = urls.replace("[", "");
                         urls = urls.replace("]", "");
+                        urls = urls.replace(":", "");
+                        urls = urls.replace("  ", " ");
+                        urls = urls.replace("  ", " ");
+                        urls = urls.replace("  ", " ");
 
-                        String[] newText = urls.split(System.getProperty("line.separator"));
+                        String[] newText = urls.split(" ");
+                        String newText2 = new String();
 
-                        for (int i = 0; i < newText.length; ++i )
+                        for (int i = 0; i < newText.length; ++i)
                         {
+                            newText2 += newText[i]  + (System.getProperty("line.separator"));
+                        }
+                        String[] newText3 = newText2.split(System.getProperty("line.separator"));
 
 
+                        for (int i = 1; i < newText3.length; ++i)
+                        {
+                            if (i == 1)
+                            {
+                                id_[0] = newText3[1];
+                                id_[1] = newText3[2];
+                                i += 2;
+
+                            }
+                            if (i == 3)
+                            {
+                                name_[0] = newText3[3];
+                                name_[1] = newText3[4];
+                                i += 2;
+                            }
+                            if (i == 5)
+                            {
+                                age_[0] = newText3[5];
+                                age_[1] = newText3[6];
+                                i += 2;
+                            }
+                            if (i == 7)
+                            {
+                                world[0] = newText3[7];
+                                world[1] = newText3[8];
+                                i += 2;
+                            }
+
+                            if (i == 9)
+                            {
+                                guilds_[0] = newText3[9];
+                                int i2 = 1;
+
+
+                                boolean NoMoreGuilds = false;
+
+
+                                /** checking first guild **/
+                                if (NoMoreGuilds == false)
+                                {
+
+                                    if (newText3[10].equals("created") || newText3[10].equals("guild_leader") || newText3[10].equals("access"))
+                                    {
+                                        NoMoreGuilds = true;
+                                    }
+                                    else
+                                    {
+                                        guilds_[i2] = newText3[10];
+                                        i2 += 1;
+                                    }
+                                }
+
+                                /** checking second guild **/
+                                if (NoMoreGuilds == false)
+                                {
+
+                                    if (newText3[11].equals("created") || newText3[11].equals("guild_leader") || newText3[11].equals("access"))
+                                    {
+                                        NoMoreGuilds = true;
+                                    }
+                                    else
+                                    {
+                                        guilds_[i2] = newText3[11];
+                                        i2 += 1;
+                                    }
+                                }
+
+                                /** checking third guild **/
+                                if (NoMoreGuilds == false)
+                                {
+
+                                    if (newText3[12].equals("created") || newText3[12].equals("guild_leader") || newText3[12].equals("access"))
+                                    {
+                                        NoMoreGuilds = true;
+                                    }
+                                    else
+                                    {
+                                        guilds_[i2] = newText3[12];
+                                        i2 += 1;
+                                    }
+                                }
+
+                                /** checking fourth guild **/
+                                if (NoMoreGuilds == false)
+                                {
+
+                                    if (newText3[13].equals("created") || newText3[13].equals("guild_leader") || newText3[13].equals("access"))
+                                    {
+                                        NoMoreGuilds = true;
+                                    }
+                                    else
+                                    {
+                                        guilds_[i2] = newText3[13];
+                                        i2 += 1;
+                                    }
+                                }
+
+                                /** checking fifth guild **/
+                                if (NoMoreGuilds == false)
+                                {
+
+                                    if (newText3[14].equals("created") || newText3[14].equals("guild_leader") || newText3[14].equals("access"))
+                                    {
+                                        NoMoreGuilds = true;
+                                    }
+                                    else
+                                    {
+                                        guilds_[i2] = newText3[14];
+                                        i2 += 1;
+                                    }
+                                }
+
+
+                                i += i2;
+                            }
 
 
                         }
 
-                        t.setText(urls); // My TextFile has 3 lines
+                        t.setText(guilds_[5]); // My TextFile has 3 lines
                     }
                 });
 
