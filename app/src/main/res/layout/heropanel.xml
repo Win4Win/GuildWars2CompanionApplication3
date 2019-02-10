@@ -7,25 +7,13 @@
     android:background="@drawable/background">
 
 
-    <ImageView
-        android:id="@+id/iconsView1"
-
-        android:layout_width="400dp"
-        android:layout_height="72dp"
-        android:background="@drawable/template"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/more"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
     <ScrollView
         android:id="@+id/tab2View"
         android:layout_width="389dp"
-        android:layout_height="394dp"
-        app:layout_constraintBottom_toTopOf="@+id/companion1"
+        android:layout_height="392dp"
+        app:layout_constraintBottom_toTopOf="@+id/icons"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/hero_view_holder">
 
@@ -100,85 +88,6 @@
 
     </HorizontalScrollView>
 
-    <Button
-        android:id="@+id/heroPanel1"
-        android:layout_width="76dp"
-        android:layout_height="69dp"
-        android:background="@drawable/gear2"
-        android:gravity="bottom|center"
-        android:text="Hero Panel"
-        android:textAllCaps="false"
-        android:textColor="@android:color/background_light"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/forums1"
-        app:layout_constraintTop_toBottomOf="@+id/tab2View"
-        tools:text="Hero Panel" />
-
-    <Button
-        android:id="@+id/companion1"
-        android:layout_width="76dp"
-        android:layout_height="69dp"
-        android:layout_weight="1"
-        android:background="@drawable/companion3"
-        android:gravity="bottom|center"
-        android:text="Companion"
-        android:textAllCaps="false"
-        android:textColor="@android:color/darker_gray"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/heroPanel1"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tab2View"
-        tools:text="Companion" />
-
-    <Button
-        android:id="@+id/forums1"
-        android:layout_width="76dp"
-        android:layout_height="69dp"
-        android:background="@drawable/gw2forums1"
-        android:gravity="bottom|center"
-        android:text="Forums"
-        android:textAllCaps="false"
-        android:textColor="@android:color/darker_gray"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/wvw1"
-        app:layout_constraintTop_toBottomOf="@+id/tab2View"
-        tools:text="Forums" />
-
-    <Button
-        android:id="@+id/wvw1"
-        android:layout_width="76dp"
-        android:layout_height="69dp"
-        android:background="@drawable/wvw1"
-        android:gravity="bottom|center"
-        android:text="WvW"
-        android:textAllCaps="false"
-        android:textColor="@android:color/darker_gray"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/more1"
-        app:layout_constraintTop_toBottomOf="@+id/tab2View"
-        tools:text="WvW" />
-
-
-    <Button
-        android:id="@+id/more1"
-        android:layout_width="76dp"
-        android:layout_height="69dp"
-        android:background="@drawable/more1"
-        android:gravity="bottom|center"
-        android:text="More"
-        android:textAllCaps="false"
-        android:textColor="@android:color/darker_gray"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tab2View"
-        app:layout_constraintVertical_bias="1.0"
-        tools:text="More" />
 
     <TextView
         android:id="@+id/YourName"
@@ -194,5 +103,100 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="HERO PANEL" />
+
+    <LinearLayout
+        android:id="@+id/icons"
+        android:layout_width="0dp"
+        android:layout_height="69dp"
+        android:background="@drawable/lighterbackground"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tab2View">
+
+        <Button
+            android:id="@+id/companion1"
+            android:layout_width="76dp"
+            android:layout_height="69dp"
+            android:layout_weight="1"
+            android:background="@drawable/companion3"
+            android:gravity="bottom|center"
+            android:text="Companion"
+            android:textAllCaps="false"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/heroPanel1"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tab2View"
+            tools:text="Companion" />
+
+        <Button
+            android:id="@+id/heroPanel1"
+            android:layout_width="76dp"
+            android:layout_height="69dp"
+            android:layout_weight="1"
+            android:background="@drawable/gear2"
+            android:gravity="bottom|center"
+            android:text="Hero Panel"
+            android:textAllCaps="false"
+            android:textColor="@android:color/background_light"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/forums1"
+            app:layout_constraintTop_toBottomOf="@+id/tab2View"
+            tools:text="Hero Panel" />
+
+        <Button
+            android:id="@+id/forums1"
+            android:layout_width="76dp"
+            android:layout_height="69dp"
+            android:layout_weight="1"
+            android:background="@drawable/gw2forums1"
+            android:gravity="bottom|center"
+            android:text="Forums"
+            android:textAllCaps="false"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/wvw1"
+            app:layout_constraintTop_toBottomOf="@+id/tab2View"
+            tools:text="Forums" />
+
+        <Button
+            android:id="@+id/wvw1"
+            android:layout_width="76dp"
+            android:layout_height="69dp"
+            android:layout_weight="1"
+            android:background="@drawable/wvw1"
+            android:gravity="bottom|center"
+            android:text="WvW"
+            android:textAllCaps="false"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/more1"
+            app:layout_constraintTop_toBottomOf="@+id/tab2View"
+            tools:text="WvW" />
+
+        <Button
+            android:id="@+id/more1"
+            android:layout_width="76dp"
+            android:layout_height="69dp"
+            android:layout_weight="1"
+            android:background="@drawable/more1"
+            android:gravity="bottom|center"
+            android:text="More"
+            android:textAllCaps="false"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tab2View"
+            app:layout_constraintVertical_bias="1.0"
+            tools:text="More" />
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

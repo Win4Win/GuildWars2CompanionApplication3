@@ -29,7 +29,7 @@ public class testPage extends AppCompatActivity {
     static String[] guilds_ = new String[6];
     static String[] guildLeader_= new String[6];
     static String[] created_ = new String[2];
-    static String[] access_ = new String[4];
+    static String[] access_ = new String[6];
     static String[] commander_ = new String[2];
     static String[] fractalLevel_ = new String[2];
     static String[] dailyAp_ = new String[2];
@@ -107,8 +107,9 @@ public class testPage extends AppCompatActivity {
                         String[] newText3 = newText2.split(System.getProperty("line.separator"));
 
 
-                        for (int i = 1; i < newText3.length; ++i)
-                        {
+                       int i = 1;
+
+
                             if (i == 1)
                             {
                                 id_[0] = newText3[1];
@@ -224,9 +225,290 @@ public class testPage extends AppCompatActivity {
                             }
 
 
+
+                            if (newText3[i].equals("guild_leader"))
+                            {
+                                int i2 = i;
+                                guildLeader_[0] = newText3[i2];
+                               i2 += 1;
+
+
+                                boolean NoMoreGuilds = false;
+
+                                /** checking first guild L**/
+                                if (NoMoreGuilds == false)
+                                {
+
+                                    if (newText3[i2].equals("created")  || newText3[i2].equals("access"))
+                                    {
+                                        NoMoreGuilds = true;
+                                    }
+                                    else
+                                    {
+                                        guildLeader_[i2-i] = newText3[i2];
+                                        i2 += 1;
+                                    }
+                                }
+
+                                /** checking second guild L**/
+                                if (NoMoreGuilds == false)
+                                {
+
+                                    if (newText3[i2].equals("created")  || newText3[i2].equals("access"))
+                                    {
+                                        NoMoreGuilds = true;
+                                    }
+                                    else
+                                    {
+                                        guildLeader_[i2-i] = newText3[i2];
+                                        i2 += 1;
+                                    }
+                                }
+
+                                /** checking third guild L**/
+                                if (NoMoreGuilds == false)
+                                {
+
+                                    if (newText3[i2].equals("created")  || newText3[i2].equals("access"))
+                                    {
+                                        NoMoreGuilds = true;
+                                    }
+                                    else
+                                    {
+                                        guildLeader_[i2-i] = newText3[i2];
+                                        i2 += 1;
+                                    }
+                                }
+
+                                /** checking 4th guild L**/
+                                if (NoMoreGuilds == false)
+                                {
+
+                                    if (newText3[i2].equals("created")  || newText3[i2].equals("access"))
+                                    {
+                                        NoMoreGuilds = true;
+                                    }
+                                    else
+                                    {
+                                        guildLeader_[i2-i] = newText3[i2];
+                                        i2 += 1;
+                                    }
+                                }
+
+                                /** checking fifth guild L**/
+                                if (NoMoreGuilds == false)
+                                {
+
+                                    if (newText3[i2].equals("created")  || newText3[i2].equals("access"))
+                                    {
+                                        NoMoreGuilds = true;
+                                    }
+                                    else
+                                    {
+                                        guildLeader_[i2-i] = newText3[i2];
+                                        i2 += 1;
+                                    }
+                                }
+
+
+
+
+                                i = i2;
+                            }
+
+                            if (newText3[i].equals("created"))
+                            {
+                                created_[0] = newText3[i];
+                                i += 1;
+                                created_[1] = newText3[i];
+                                i += 1;
+                            }
+
+                            if (newText3[i].equals("access"))
+                            {
+                                int i2 = i;
+                                access_[0] = newText3[i2];
+                                i2 += 1;
+
+                                boolean NoMoreExpansions = false;
+
+
+
+                                /** checking 1st expansion **/
+                                if (NoMoreExpansions == false)
+                                {
+                                    if (newText3[i2].equals("commander") || newText3[i2].equals("fractal_level"))
+                                    {
+                                        NoMoreExpansions = true;
+                                    }
+                                    else
+                                    {
+                                        access_[i2 - i] = newText3[i2];
+                                        i2 += 1;
+                                    }
+                                }
+
+                                /** checking 2nd expansion **/
+                                if (NoMoreExpansions == false)
+                                {
+                                    if (newText3[i2].equals("commander") || newText3[i2].equals("fractal_level"))
+                                    {
+                                        NoMoreExpansions = true;
+                                    }
+                                    else
+                                    {
+                                        access_[i2 - i] = newText3[i2];
+                                        i2 += 1;
+                                    }
+                                }
+
+                                /** checking 3rd expansion **/
+                                if (NoMoreExpansions == false)
+                                {
+                                    if (newText3[i2].equals("commander") || newText3[i2].equals("fractal_level"))
+                                    {
+                                        NoMoreExpansions = true;
+                                    }
+                                    else
+                                    {
+                                        access_[i2 - i] = newText3[i2];
+                                        i2 += 1;
+                                    }
+                                }
+
+                                /** checking 4th expansion **/
+                                if (NoMoreExpansions == false)
+                                {
+                                    if (newText3[i2].equals("commander") || newText3[i2].equals("fractal_level"))
+                                    {
+                                        NoMoreExpansions = true;
+                                    }
+                                    else
+                                    {
+                                        access_[i2 - i] = newText3[i2];
+                                        i2 += 1;
+                                    }
+                                }
+
+                                /** checking 5th expansion **/
+                                if (NoMoreExpansions == false)
+                                {
+                                    if (newText3[i2].equals("commander") || newText3[i2].equals("fractal_level"))
+                                    {
+                                        NoMoreExpansions = true;
+                                    }
+                                    else
+                                    {
+                                        access_[i2 - i] = newText3[i2];
+                                        i2 += 1;
+                                    }
+                                }
+
+                                i = i2;
+                            }
+
+
+                            boolean OutOfBounds = false;
+
+                            if (OutOfBounds == false)
+                            {
+                                try
+                                {
+                                    if (newText3[i].equals("commander"))
+                                    {
+                                        commander_[0] = newText3[i];
+                                        i += 1;
+                                        commander_[1] = newText3[i];
+                                        i += 1;
+                                    }
+
+
+                                } catch (IndexOutOfBoundsException e)
+                                {
+                                    OutOfBounds = true;
+                                }
+                            }
+
+
+
+
+                        if (OutOfBounds == false)
+                        {
+                            try
+                            {
+                                if (newText3[i].equals("fractal_level"))
+                                {
+                                    fractalLevel_[0] = newText3[i];
+                                    i += 1;
+                                    fractalLevel_[1] = newText3[i];
+                                    i += 1;
+                                }
+
+
+                            } catch (IndexOutOfBoundsException e)
+                            {
+                                OutOfBounds = true;
+                            }
                         }
 
-                        t.setText(guilds_[5]); // My TextFile has 3 lines
+                        if (OutOfBounds == false)
+                        {
+                            try
+                            {
+                                if (newText3[i].equals("daily_ap"))
+                                {
+                                    dailyAp_[0] = newText3[i];
+                                    i += 1;
+                                     dailyAp_[1] = newText3[i];
+                                    i += 1;
+                                }
+
+
+                            } catch (IndexOutOfBoundsException e)
+                            {
+                                OutOfBounds = true;
+                            }
+                        }
+
+                        if (OutOfBounds == false)
+                        {
+                            try
+                            {
+                                if (newText3[i].equals("monthly_ap"))
+                                {
+                                    monthlyAp_[0] = newText3[i];
+                                    i += 1;
+                                    monthlyAp_[1] = newText3[i];
+                                    i += 1;
+                                }
+
+
+                            } catch (IndexOutOfBoundsException e)
+                            {
+                                OutOfBounds = true;
+                            }
+                        }
+
+                        if (OutOfBounds == false)
+                        {
+                            try
+                            {
+                                if (newText3[i].equals("wvw_rank"))
+                                {
+                                    wvwRank_[0] = newText3[i];
+                                    i += 1;
+                                    wvwRank_[1] = newText3[i];
+                                    i += 1;
+                                }
+
+
+                            } catch (IndexOutOfBoundsException e)
+                            {
+                                OutOfBounds = true;
+                            }
+                        }
+
+                        t.setText(wvwRank_[1]); // My TextFile has 3 lines
                     }
                 });
 

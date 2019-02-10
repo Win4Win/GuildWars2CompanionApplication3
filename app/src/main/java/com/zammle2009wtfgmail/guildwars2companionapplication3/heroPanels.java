@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class heroPanels extends AppCompatActivity {
 
@@ -17,6 +18,9 @@ public class heroPanels extends AppCompatActivity {
         setContentView(R.layout.heropanel);
 
 
+
+        final TextView t = (TextView) findViewById(R.id.YourName);
+        t.setText(MainActivity.name_[1]); // My TextFile has 3 lines
 
 
         final Button gear = (Button) findViewById(R.id.gear);
