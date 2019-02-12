@@ -48,6 +48,20 @@ public class fetchData extends AsyncTask<Void, Void, Void> {
 
             JSONObject JO =  new JSONObject(testPage.urls2);
 
+            JSONArray maps = JO.getJSONArray("maps");
+
+            JSONObject EBG = (JSONObject) maps.get(0);
+            JSONArray EBGobjectives = EBG.getJSONArray("objectives");
+
+            JSONObject Green = (JSONObject) maps.get(1);
+            JSONArray Greenobjectives = Green.getJSONArray("objectives");
+
+            JSONObject Blue = (JSONObject) maps.get(2);
+            JSONArray Blueobjectives = Blue.getJSONArray("objectives");
+
+            JSONObject Red = (JSONObject) maps.get(3);
+            JSONArray Redobjectives = Red.getJSONArray("objectives");
+
             /**
             for(int i = 0; i < JA.length(); ++i)
             {
@@ -63,7 +77,7 @@ public class fetchData extends AsyncTask<Void, Void, Void> {
 
 
 
-            SingleParsed = "Id:" + JO.get("id")  ;
+            SingleParsed = "" + JO2.get("red")  ;
 
 
             in.close();
