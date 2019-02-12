@@ -13,8 +13,10 @@
         android:theme="@style/AppTheme">
         <activity android:name=".heroPanels"/>
         <activity android:name=".testPage"/>
+
+        <activity android:name=".worldVsWorld"/>
         <activity android:name=".testPage2"/>
-            <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

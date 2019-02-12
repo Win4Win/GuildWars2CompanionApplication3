@@ -508,7 +508,7 @@ public class testPage extends AppCompatActivity {
                             }
                         }
 
-                        t.setText(wvwRank_[1]); // My TextFile has 3 lines
+                        t.setText(urls); // My TextFile has 3 lines
                     }
                 });
 
