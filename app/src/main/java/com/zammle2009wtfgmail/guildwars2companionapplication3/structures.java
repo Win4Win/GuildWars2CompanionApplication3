@@ -1,5 +1,7 @@
 package com.zammle2009wtfgmail.guildwars2companionapplication3;
 
+import java.util.ArrayList;
+
 public class structures
 {
         String id = "";
@@ -8,7 +10,9 @@ public class structures
         String last_flipped = "";
         String points_tick = "";
         String points_capture = "";
-
+        String claimed_by = "";
+        String yaks_delivered = "";
+        public ArrayList<String> guild_upgrades = new ArrayList <>();
 
 
         void setId (String id_)
@@ -35,6 +39,15 @@ public class structures
         {
             points_capture = points_capture;
         }
+        void setClaimed_by(String claimed_by_)
+        {
+            claimed_by = claimed_by_;
+        }
+        void setYaks_delivered(String yaks_delivered_)
+        {
+            yaks_delivered = yaks_delivered_;
+        }
+
 
         String getId ()
         {
@@ -60,8 +73,21 @@ public class structures
         {
             return points_capture;
         }
+        String getClaimed_by()
+        {
+            return claimed_by;
+        }
+        String getYaks_delivered()
+        {
+            return yaks_delivered;
+        }
 
 
+
+        boolean setTime (String time)
+        {
+            return false;
+        }
 
 
 

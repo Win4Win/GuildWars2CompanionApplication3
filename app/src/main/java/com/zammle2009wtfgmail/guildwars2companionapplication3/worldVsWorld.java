@@ -12,6 +12,10 @@ public class worldVsWorld extends AppCompatActivity {
 
 
 
+    static borderlands Center = new borderlands();
+    static borderlands redBorderlands = new borderlands();
+    static borderlands blueBorderlands = new borderlands();
+    static borderlands greenBorderlands = new borderlands();
 
 
 
