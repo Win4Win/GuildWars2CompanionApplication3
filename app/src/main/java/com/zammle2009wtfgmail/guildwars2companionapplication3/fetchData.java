@@ -61,9 +61,14 @@ public class fetchData extends AsyncTask<Void, Void, Void> {
                 JSONObject source = (JSONObject) EBGobjectives.get(i);
                 structures temp = new structures();
 
-                if (EBGobjectives.length() > 6) {
+                try
+                {
                     temp.yaks_delivered = "" + source.get("yak_delivered");
                     temp.claimed_by = "" + source.get("claimed_by");
+                }
+                catch(Exception e)
+                {
+
                 }
                 temp.points_capture = "" + source.get("points_capture");
                 temp.points_tick = "" + source.get("points_tick");
@@ -89,10 +94,15 @@ public class fetchData extends AsyncTask<Void, Void, Void> {
                 JSONObject source = (JSONObject) Greenobjectives.get(i);
                 structures temp = new structures();
 
-                if (Greenobjectives.length() > 6) {
-                    temp.yaks_delivered = "" + source.get("yak_delivered");
-                    temp.claimed_by = "" + source.get("claimed_by");
-                }
+             try {
+                 temp.yaks_delivered = "" + source.get("yak_delivered");
+                 temp.claimed_by = "" + source.get("claimed_by");
+             }
+             catch (Exception e)
+             {
+
+             }
+
 
                 temp.points_capture = "" + source.get("points_capture");
                 temp.points_tick = "" + source.get("points_tick");
@@ -118,9 +128,14 @@ public class fetchData extends AsyncTask<Void, Void, Void> {
                 JSONObject source = (JSONObject) Blueobjectives.get(i);
                 structures temp = new structures();
 
-               if (Blueobjectives.length() > 6) {
+                try
+                {
                    temp.yaks_delivered = "" + source.get("yak_delivered");
                    temp.claimed_by = "" + source.get("claimed_by");
+               }
+               catch (Exception e)
+               {
+
                }
 
                 temp.points_capture = "" + source.get("points_capture");
@@ -147,9 +162,14 @@ public class fetchData extends AsyncTask<Void, Void, Void> {
                 JSONObject source = (JSONObject) Redobjectives.get(i);
                 structures temp = new structures();
 
-                if (Redobjectives.length() > 6) {
+               try
+               {
                     temp.yaks_delivered = "" + source.get("yak_delivered");
                     temp.claimed_by = "" + source.get("claimed_by");
+                }
+                catch (Exception e)
+                {
+
                 }
 
                 temp.points_capture = "" + source.get("points_capture");
