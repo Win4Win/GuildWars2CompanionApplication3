@@ -46,19 +46,32 @@ public class fetchData extends AsyncTask<Void, Void, Void> {
                 testPage.urls2 = testPage.urls2 + str;
             }
 
-            JSONObject JO =  new JSONObject(testPage.urls2);
+            JSONObject WvW =  new JSONObject(testPage.urls2);
 
-            JSONArray maps = JO.getJSONArray("maps");
+            JSONArray maps = WvW.getJSONArray("maps");
 
+            //////////////////////////////////////////////////////////////////////////////////
+            /////////////////////////////////////  EBG  //////////////////////////////////////
+            //////////////////////////////////////////////////////////////////////////////////
             JSONObject EBG = (JSONObject) maps.get(0);
             JSONArray EBGobjectives = EBG.getJSONArray("objectives");
+            JSONObject Hill = (JSONObject) EBGobjectives.get(0);
 
+            //////////////////////////////////////////////////////////////////////////////////
+            /////////////////////////////////////  GREEN BL  /////////////////////////////////
+            //////////////////////////////////////////////////////////////////////////////////
             JSONObject Green = (JSONObject) maps.get(1);
             JSONArray Greenobjectives = Green.getJSONArray("objectives");
 
+            //////////////////////////////////////////////////////////////////////////////////
+            /////////////////////////////////////  BLUE BL  //////////////////////////////////
+            //////////////////////////////////////////////////////////////////////////////////
             JSONObject Blue = (JSONObject) maps.get(2);
             JSONArray Blueobjectives = Blue.getJSONArray("objectives");
 
+            //////////////////////////////////////////////////////////////////////////////////
+            /////////////////////////////////////  RED BL  ///////////////////////////////////
+            //////////////////////////////////////////////////////////////////////////////////
             JSONObject Red = (JSONObject) maps.get(3);
             JSONArray Redobjectives = Red.getJSONArray("objectives");
 
@@ -77,7 +90,7 @@ public class fetchData extends AsyncTask<Void, Void, Void> {
 
 
 
-            SingleParsed = "" + JO2.get("red")  ;
+            SingleParsed = "" + Hill.get("last_flipped")  ;
 
 
             in.close();
