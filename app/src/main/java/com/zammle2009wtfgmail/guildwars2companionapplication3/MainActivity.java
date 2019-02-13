@@ -664,10 +664,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v)
             {
-                /**
-                 Intent history = new Intent (MainActivity.this, History.class );
+
+                 Intent history = new Intent (MainActivity.this, worldVsWorld.class );
                  startActivity(history);
-                 **/
+
             }
 
         });

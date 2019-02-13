@@ -180,10 +180,10 @@ public class heroPanels extends AppCompatActivity {
             @Override
             public void onClick(View v)
             {
-                /**
-                 Intent history = new Intent (MainActivity.this, History.class );
+
+                 Intent history = new Intent (heroPanels.this, worldVsWorld.class );
                  startActivity(history);
-                 **/
+
             }
 
         });

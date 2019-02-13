@@ -12,11 +12,13 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/ebg"
         android:layout_width="match_parent"
-        android:layout_height="498dp"
+        android:layout_height="506dp"
         android:background="@drawable/ebg"
+        android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/icons2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <Button
             android:id="@+id/button4"
@@ -170,7 +172,7 @@
             android:layout_alignParentEnd="true"
             android:layout_below="@+id/imageView4"
             android:layout_marginEnd="63dp"
-            app:srcCompat="@drawable/blueI" />
+            app:srcCompat="@drawable/blueicon" />
 
         <ImageView
             android:id="@+id/imageView15"
@@ -179,7 +181,7 @@
             android:layout_alignParentBottom="true"
             android:layout_alignStart="@+id/imageView12"
             android:layout_marginBottom="77dp"
-            app:srcCompat="@drawable/blueI" />
+            app:srcCompat="@drawable/blueicon" />
 
         <ImageView
             android:id="@+id/imageView16"
@@ -188,15 +190,15 @@
             android:layout_above="@+id/imageView15"
             android:layout_marginStart="-171dp"
             android:layout_toEndOf="@+id/button4"
-            app:srcCompat="@drawable/blueI" />
+            app:srcCompat="@drawable/blueicon" />
 
         <ImageView
             android:id="@+id/imageView17"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_alignTop="@+id/imageView3"
-            android:layout_toEndOf="@+id/imageView7"
-            app:srcCompat="@drawable/blueI" />
+            android:layout_toStartOf="@+id/imageView12"
+            app:srcCompat="@drawable/blueicon" />
 
         <ImageView
             android:id="@+id/imageView18"
@@ -206,7 +208,7 @@
             android:layout_marginStart="-73dp"
             android:layout_marginTop="-195dp"
             android:layout_toEndOf="@+id/imageView12"
-            app:srcCompat="@drawable/blueI" />
+            app:srcCompat="@drawable/blueicon" />
 
         <ImageView
             android:id="@+id/imageView19"
@@ -214,7 +216,7 @@
             android:layout_height="35dp"
             android:layout_alignBottom="@+id/button4"
             android:layout_toStartOf="@+id/imageView14"
-            app:srcCompat="@drawable/blueI" />
+            app:srcCompat="@drawable/blueicon" />
 
         <ImageView
             android:id="@+id/imageView20"
@@ -223,7 +225,7 @@
             android:layout_alignBottom="@+id/button4"
             android:layout_alignParentEnd="true"
             android:layout_marginEnd="53dp"
-            app:srcCompat="@drawable/blueI" />
+            app:srcCompat="@drawable/blueicon" />
 
 
     </RelativeLayout>
