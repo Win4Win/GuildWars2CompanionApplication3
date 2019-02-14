@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import org.json.JSONArray;
@@ -23,7 +24,7 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class fetchData extends AsyncTask<Void, Void, Void> {
+public class fetchData extends AsyncTask<Void, Void, Void>  {
 
 
 
@@ -68,7 +69,7 @@ public class fetchData extends AsyncTask<Void, Void, Void> {
                 }
                 catch(Exception e)
                 {
-
+                    temp.notSpawn = false;
                 }
                 temp.points_capture = "" + source.get("points_capture");
                 temp.points_tick = "" + source.get("points_tick");
@@ -100,7 +101,7 @@ public class fetchData extends AsyncTask<Void, Void, Void> {
              }
              catch (Exception e)
              {
-
+                 temp.notSpawn = false;
              }
 
 
@@ -135,7 +136,7 @@ public class fetchData extends AsyncTask<Void, Void, Void> {
                }
                catch (Exception e)
                {
-
+                   temp.notSpawn = false;
                }
 
                 temp.points_capture = "" + source.get("points_capture");
@@ -169,7 +170,7 @@ public class fetchData extends AsyncTask<Void, Void, Void> {
                 }
                 catch (Exception e)
                 {
-
+                    temp.notSpawn = false;
                 }
 
                 temp.points_capture = "" + source.get("points_capture");

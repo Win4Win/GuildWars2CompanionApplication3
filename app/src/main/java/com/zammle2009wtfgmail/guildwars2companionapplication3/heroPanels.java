@@ -18,6 +18,7 @@ public class heroPanels extends AppCompatActivity {
         setContentView(R.layout.heropanel);
 
 
+        MainActivity.selectedLayout = 1;
 
         final TextView t = (TextView) findViewById(R.id.YourName);
         t.setText(MainActivity.name_[1]); // My TextFile has 3 lines

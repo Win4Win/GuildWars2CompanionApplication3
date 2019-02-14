@@ -35,10 +35,15 @@ public class MainActivity extends AppCompatActivity {
     static String[] wvwRank_= new String[2];
 
 
+    static int selectedLayout;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        selectedLayout = 0;
 
 
         final Button milestone = (Button) findViewById(R.id.Milestone);
