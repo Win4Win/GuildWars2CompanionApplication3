@@ -41,11 +41,13 @@ public class fetchData extends AsyncTask<Void, Void, Void>  {
 
             BufferedReader in = new BufferedReader(new InputStreamReader(conn.getInputStream()));
 
+            testPage.urls2 = "";
 
             String str;
             while ((str = in.readLine()) != null) {
                 testPage.urls2 = testPage.urls2 + str;
             }
+            in.close();
 
             JSONObject WvW =  new JSONObject(testPage.urls2);
 
@@ -57,31 +59,39 @@ public class fetchData extends AsyncTask<Void, Void, Void>  {
             JSONObject EBG = (JSONObject) maps.get(0);
             JSONArray EBGobjectives = EBG.getJSONArray("objectives");
 
-            for (int i = 0; i < EBGobjectives.length(); ++i)
+            if (worldVsWorld.Borderland == 0)
             {
-                JSONObject source = (JSONObject) EBGobjectives.get(i);
-                structures temp = new structures();
-
-                try
+                for (int i = 0; i < EBGobjectives.length(); ++i)
                 {
-                    temp.yaks_delivered = "" + source.get("yak_delivered");
-                    temp.claimed_by = "" + source.get("claimed_by");
+                    JSONObject source = (JSONObject) EBGobjectives.get(i);
+                    String temp = "" + source.get("owner");
+
+                    try
+                    {
+                        if (!worldVsWorld.Center.buildings.get(i).owner.equals(temp))
+                        {
+                            if (temp.equals("Red"))
+                            {
+                                worldVsWorld.Center.buildings.get(i).color.setImageResource(R.drawable.red);
+                            }
+                            else if (temp.equals("Blue"))
+                            {
+                                worldVsWorld.Center.buildings.get(i).color.setImageResource(R.drawable.blueicon);
+                            }
+                            else if (temp.equals("Green"))
+                            {
+                                worldVsWorld.Center.buildings.get(i).color.setImageResource(R.drawable.green);
+                            }
+
+                        }
+                    }
+                    catch(Exception e)
+                    {
+
+                    }
                 }
-                catch(Exception e)
-                {
-                    temp.notSpawn = false;
-                }
-                temp.points_capture = "" + source.get("points_capture");
-                temp.points_tick = "" + source.get("points_tick");
-                temp.type = "" + source.get("type");
-                temp.id = "" + source.get("id");
-                temp.last_flipped = "" + source.get("last_flipped");
-
-
-
-                worldVsWorld.Center.buildings.add(temp);
-
             }
+
 
 
             //////////////////////////////////////////////////////////////////////////////////
@@ -90,32 +100,11 @@ public class fetchData extends AsyncTask<Void, Void, Void>  {
             JSONObject Green = (JSONObject) maps.get(1);
             JSONArray Greenobjectives = Green.getJSONArray("objectives");
 
-            for (int i = 0; i < Greenobjectives.length(); ++i)
+            if (worldVsWorld.Borderland == 1)
             {
-                JSONObject source = (JSONObject) Greenobjectives.get(i);
-                structures temp = new structures();
-
-             try {
-                 temp.yaks_delivered = "" + source.get("yak_delivered");
-                 temp.claimed_by = "" + source.get("claimed_by");
-             }
-             catch (Exception e)
-             {
-                 temp.notSpawn = false;
-             }
-
-
-                temp.points_capture = "" + source.get("points_capture");
-                temp.points_tick = "" + source.get("points_tick");
-                temp.type = "" + source.get("type");
-                temp.id = "" + source.get("id");
-                temp.last_flipped = "" + source.get("last_flipped");
-
-
-
-                worldVsWorld.greenBorderlands.buildings.add(temp);
 
             }
+
 
 
             //////////////////////////////////////////////////////////////////////////////////
@@ -124,30 +113,9 @@ public class fetchData extends AsyncTask<Void, Void, Void>  {
             JSONObject Blue = (JSONObject) maps.get(2);
             JSONArray Blueobjectives = Blue.getJSONArray("objectives");
 
-            for (int i = 0; i < Blueobjectives.length(); ++i)
+
+            if (worldVsWorld.Borderland == 2)
             {
-                JSONObject source = (JSONObject) Blueobjectives.get(i);
-                structures temp = new structures();
-
-                try
-                {
-                   temp.yaks_delivered = "" + source.get("yak_delivered");
-                   temp.claimed_by = "" + source.get("claimed_by");
-               }
-               catch (Exception e)
-               {
-                   temp.notSpawn = false;
-               }
-
-                temp.points_capture = "" + source.get("points_capture");
-                temp.points_tick = "" + source.get("points_tick");
-                temp.type = "" + source.get("type");
-                temp.id = "" + source.get("id");
-                temp.last_flipped = "" + source.get("last_flipped");
-
-
-
-                worldVsWorld.blueBorderlands.buildings.add(temp);
 
             }
 
@@ -157,31 +125,8 @@ public class fetchData extends AsyncTask<Void, Void, Void>  {
             JSONObject Red = (JSONObject) maps.get(3);
             JSONArray Redobjectives = Red.getJSONArray("objectives");
 
-
-            for (int i = 0; i < Redobjectives.length(); ++i)
+            if (worldVsWorld.Borderland == 3)
             {
-                JSONObject source = (JSONObject) Redobjectives.get(i);
-                structures temp = new structures();
-
-               try
-               {
-                    temp.yaks_delivered = "" + source.get("yak_delivered");
-                    temp.claimed_by = "" + source.get("claimed_by");
-                }
-                catch (Exception e)
-                {
-                    temp.notSpawn = false;
-                }
-
-                temp.points_capture = "" + source.get("points_capture");
-                temp.points_tick = "" + source.get("points_tick");
-                temp.type = "" + source.get("type");
-                temp.id = "" + source.get("id");
-                temp.last_flipped = "" + source.get("last_flipped");
-
-
-
-                worldVsWorld.redBorderlands.buildings.add(temp);
 
             }
 
@@ -204,13 +149,27 @@ public class fetchData extends AsyncTask<Void, Void, Void>  {
         {
             e.printStackTrace();
         }
+
+
+
+
+
         return null;
     }
 
     @Override
-    protected void onPostExecute(Void aVoid) {
+    protected void onPostExecute(Void aVoid)
+    {
         super.onPostExecute(aVoid);
 
-        testPage.testpage.setText(worldVsWorld.redBorderlands.buildings.get(1).getId());
+        try {
+
+            int i = Integer.parseInt(worldVsWorld.server.toString()) + 1;
+            worldVsWorld.server.setText((Integer.toString(i)));
+        }
+        catch (Exception e)
+        {
+
+        }
     }
 }
