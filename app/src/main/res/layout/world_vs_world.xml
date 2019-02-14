@@ -20,18 +20,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <Button
-            android:id="@+id/button4"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginBottom="195dp"
-            android:layout_marginEnd="171dp"
-            android:background="@drawable/smc" />
 
         <ImageView
-            android:id="@+id/imageView1"
+            android:id="@+id/green_keep"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_alignParentBottom="true"
@@ -41,7 +32,7 @@
             app:srcCompat="@drawable/green" />
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/rogues_quarry"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_alignParentBottom="true"
@@ -51,7 +42,7 @@
             app:srcCompat="@drawable/green" />
 
         <ImageView
-            android:id="@+id/imageView3"
+            android:id="@+id/golanta_clearing"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_alignParentBottom="true"
@@ -61,46 +52,56 @@
             app:srcCompat="@drawable/green" />
 
         <ImageView
-            android:id="@+id/imageView4"
+            android:id="@+id/aldons_ledge"
             android:layout_width="35dp"
             android:layout_height="35dp"
-            android:layout_below="@+id/button4"
+            android:layout_below="@+id/castle"
             android:layout_marginEnd="-73dp"
             android:layout_marginTop="-195dp"
-            android:layout_toStartOf="@+id/imageView1"
+            android:layout_toStartOf="@+id/green_keep"
             app:srcCompat="@drawable/green" />
 
         <ImageView
-            android:id="@+id/imageView5"
+            android:id="@+id/wildcreek_run"
             android:layout_width="35dp"
             android:layout_height="35dp"
-            android:layout_alignBottom="@+id/button4"
+            android:layout_alignBottom="@+id/castle"
             android:layout_marginBottom="-1dp"
             android:layout_marginEnd="169dp"
-            android:layout_toEndOf="@+id/imageView1"
+            android:layout_toEndOf="@+id/green_keep"
             app:srcCompat="@drawable/green" />
 
         <ImageView
-            android:id="@+id/imageView6"
+            android:id="@+id/klovan_gully"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_alignParentStart="true"
-            android:layout_alignTop="@+id/imageView1"
+            android:layout_alignTop="@+id/green_keep"
             android:layout_marginStart="136dp"
             app:srcCompat="@drawable/green" />
 
         <ImageView
-            android:id="@+id/imageView7"
+            android:id="@+id/jerrifers_slough"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/blue_keep"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="7dp"
+            android:layout_toStartOf="@+id/tower1"
+            app:srcCompat="@drawable/green" />
+
+        <ImageView
+            android:id="@+id/red_keep"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_alignParentTop="true"
             android:layout_marginTop="152dp"
-            android:layout_toEndOf="@+id/imageView3"
+            android:layout_toEndOf="@+id/golanta_clearing"
             app:srcCompat="@drawable/red" />
 
 
         <ImageView
-            android:id="@+id/imageView21"
+            android:id="@+id/stonemist_caslte"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_alignParentBottom="true"
@@ -110,7 +111,7 @@
             app:srcCompat="@drawable/white" />
 
         <ImageView
-            android:id="@+id/imageView8"
+            android:id="@+id/speldan_clearcut"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_alignParentStart="true"
@@ -120,25 +121,25 @@
             app:srcCompat="@drawable/red" />
 
         <ImageView
-            android:id="@+id/imageView10"
+            android:id="@+id/anzalias_pass"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_alignParentTop="true"
-            android:layout_alignStart="@+id/imageView6"
+            android:layout_alignStart="@+id/klovan_gully"
             android:layout_marginTop="200dp"
             app:srcCompat="@drawable/red" />
 
         <ImageView
-            android:id="@+id/imageView9"
+            android:id="@+id/veloka_slope"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_alignParentTop="true"
-            android:layout_alignStart="@+id/imageView11"
+            android:layout_alignStart="@+id/ogrewatch_cut"
             android:layout_marginTop="126dp"
             app:srcCompat="@drawable/red" />
 
         <ImageView
-            android:id="@+id/imageView11"
+            android:id="@+id/ogrewatch_cut"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_alignParentEnd="true"
@@ -148,84 +149,293 @@
             app:srcCompat="@drawable/red" />
 
         <ImageView
-            android:id="@+id/imageView12"
+            android:id="@+id/pangloss_rise"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_alignParentEnd="true"
-            android:layout_below="@+id/imageView9"
+            android:layout_below="@+id/veloka_slope"
             android:layout_marginEnd="73dp"
             app:srcCompat="@drawable/red" />
 
         <ImageView
-            android:id="@+id/imageView13"
+            android:id="@+id/mendons_gap"
             android:layout_width="35dp"
             android:layout_height="35dp"
-            android:layout_above="@+id/imageView7"
-            android:layout_alignStart="@+id/imageView6"
+            android:layout_above="@+id/red_keep"
+            android:layout_alignStart="@+id/klovan_gully"
             android:layout_marginBottom="-149dp"
             app:srcCompat="@drawable/red" />
 
         <ImageView
-            android:id="@+id/imageView14"
+            android:id="@+id/blue_keep"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_alignParentEnd="true"
-            android:layout_below="@+id/imageView4"
+            android:layout_below="@+id/aldons_ledge"
             android:layout_marginEnd="63dp"
             app:srcCompat="@drawable/blueicon" />
 
         <ImageView
-            android:id="@+id/imageView15"
+            android:id="@+id/langor_gulch"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_alignParentBottom="true"
-            android:layout_alignStart="@+id/imageView12"
+            android:layout_alignStart="@+id/pangloss_rise"
             android:layout_marginBottom="77dp"
             app:srcCompat="@drawable/blueicon" />
 
         <ImageView
-            android:id="@+id/imageView16"
+            android:id="@+id/quentin_lake"
             android:layout_width="35dp"
             android:layout_height="35dp"
-            android:layout_above="@+id/imageView15"
+            android:layout_above="@+id/langor_gulch"
             android:layout_marginStart="-171dp"
-            android:layout_toEndOf="@+id/button4"
+            android:layout_toEndOf="@+id/castle"
             app:srcCompat="@drawable/blueicon" />
 
         <ImageView
-            android:id="@+id/imageView17"
+            android:id="@+id/danelon_passge"
             android:layout_width="35dp"
             android:layout_height="35dp"
-            android:layout_alignTop="@+id/imageView3"
-            android:layout_toStartOf="@+id/imageView12"
+            android:layout_alignTop="@+id/golanta_clearing"
+            android:layout_toStartOf="@+id/pangloss_rise"
             app:srcCompat="@drawable/blueicon" />
 
         <ImageView
-            android:id="@+id/imageView18"
+            android:id="@+id/bravost_escarpment"
             android:layout_width="35dp"
             android:layout_height="35dp"
-            android:layout_below="@+id/button4"
+            android:layout_below="@+id/castle"
             android:layout_marginStart="-73dp"
             android:layout_marginTop="-195dp"
-            android:layout_toEndOf="@+id/imageView12"
+            android:layout_toEndOf="@+id/pangloss_rise"
             app:srcCompat="@drawable/blueicon" />
 
         <ImageView
-            android:id="@+id/imageView19"
+            android:id="@+id/durious_gulch"
             android:layout_width="35dp"
             android:layout_height="35dp"
-            android:layout_alignBottom="@+id/button4"
-            android:layout_toStartOf="@+id/imageView14"
+            android:layout_alignBottom="@+id/castle"
+            android:layout_toStartOf="@+id/blue_keep"
             app:srcCompat="@drawable/blueicon" />
 
         <ImageView
-            android:id="@+id/imageView20"
+            android:id="@+id/umberglade_woods"
             android:layout_width="35dp"
             android:layout_height="35dp"
-            android:layout_alignBottom="@+id/button4"
+            android:layout_alignBottom="@+id/castle"
             android:layout_alignParentEnd="true"
             android:layout_marginEnd="53dp"
             app:srcCompat="@drawable/blueicon" />
+
+
+        <Button
+            android:id="@+id/tower5"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignBottom="@+id/castle"
+            android:layout_marginBottom="-1dp"
+            android:layout_marginEnd="169dp"
+            android:layout_toEndOf="@+id/green_keep"
+            android:background="@drawable/tower" />
+
+        <Button
+            android:id="@+id/tower6"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/castle"
+            android:layout_marginEnd="-73dp"
+            android:layout_marginTop="-195dp"
+            android:layout_toStartOf="@+id/green_keep"
+            android:background="@drawable/tower" />
+
+        <Button
+            android:id="@+id/camp3"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="213dp"
+            android:layout_marginStart="62dp"
+            android:background="@drawable/camp" />
+
+        <Button
+            android:id="@+id/keep2"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="130dp"
+            android:layout_marginStart="73dp"
+            android:background="@drawable/keep" />
+
+        <Button
+            android:id="@+id/tower7"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/green_keep"
+            android:layout_marginStart="136dp"
+            android:background="@drawable/tower" />
+
+        <Button
+            android:id="@+id/tower8"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/blue_keep"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="7dp"
+            android:layout_toStartOf="@+id/tower1"
+            android:background="@drawable/tower" />
+
+
+        <Button
+            android:id="@+id/camp4"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="70dp"
+            android:layout_marginStart="161dp"
+            android:background="@drawable/camp" />
+
+        <Button
+            android:id="@+id/tower9"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_above="@+id/langor_gulch"
+            android:layout_marginStart="-171dp"
+            android:layout_toEndOf="@+id/castle"
+            android:background="@drawable/tower" />
+
+        <Button
+            android:id="@+id/camp5"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignTop="@+id/golanta_clearing"
+            android:layout_toStartOf="@+id/pangloss_rise"
+            android:background="@drawable/camp" />
+
+        <Button
+            android:id="@+id/tower12"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/pangloss_rise"
+            android:layout_marginBottom="77dp"
+            android:background="@drawable/tower" />
+
+        <Button
+            android:id="@+id/keep3"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/aldons_ledge"
+            android:layout_marginEnd="63dp"
+            android:background="@drawable/keep" />
+
+        <Button
+            android:id="@+id/tower11"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/castle"
+            android:layout_marginStart="-73dp"
+            android:layout_marginTop="-195dp"
+            android:layout_toEndOf="@+id/pangloss_rise"
+            android:background="@drawable/tower" />
+
+        <Button
+            android:id="@+id/tower10"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignBottom="@+id/castle"
+            android:layout_toStartOf="@+id/blue_keep"
+            android:background="@drawable/tower" />
+
+        <Button
+            android:id="@+id/camp6"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignBottom="@+id/castle"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="53dp"
+            android:background="@drawable/camp" />
+
+        <Button
+            android:id="@+id/tower2"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/klovan_gully"
+            android:layout_marginTop="200dp"
+            android:background="@drawable/tower" />
+
+        <Button
+            android:id="@+id/camp1"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="83dp"
+            android:layout_marginTop="133dp"
+            android:background="@drawable/camp" />
+
+        <Button
+            android:id="@+id/tower3"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/ogrewatch_cut"
+            android:layout_marginTop="126dp"
+            android:background="@drawable/tower" />
+
+
+        <Button
+            android:id="@+id/camp2"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/veloka_slope"
+            android:layout_marginEnd="73dp"
+            android:background="@drawable/camp" />
+
+        <Button
+            android:id="@+id/keep1"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="152dp"
+            android:layout_toEndOf="@+id/golanta_clearing"
+            android:background="@drawable/keep" />
+
+        <Button
+            android:id="@+id/tower4"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="118dp"
+            android:layout_marginTop="178dp"
+            android:background="@drawable/tower" />
+        <Button
+            android:id="@+id/castle"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="191dp"
+            android:layout_marginEnd="169dp"
+            android:background="@drawable/smc" />
+
+
+        <Button
+            android:id="@+id/tower1"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_above="@+id/red_keep"
+            android:layout_alignStart="@+id/klovan_gully"
+            android:layout_marginBottom="-149dp"
+            android:background="@drawable/tower" />
 
 
     </RelativeLayout>
