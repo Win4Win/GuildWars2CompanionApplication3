@@ -13,6 +13,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import org.json.JSONArray;
@@ -47,6 +49,8 @@ public class worldVsWorld extends AppCompatActivity {
 
     static int Borderland = 0;
 
+    static int count = 0;
+
   static int completed = 0;
 
 
@@ -59,10 +63,101 @@ public class worldVsWorld extends AppCompatActivity {
 
             server = (TextView) findViewById(R.id.serverName);
 
+            count = 0;
 
 
            final Button view2 = (Button) findViewById(R.id.wvw2);
 
+           final LinearLayout mapselector = (LinearLayout) findViewById(R.id.mapselector);
+           final Button maps = (Button) findViewById(R.id.button);
+           final Button ebgs = (Button) findViewById(R.id.ebgbutton);
+           final Button rbls = (Button) findViewById(R.id.rblbutton);
+           final Button bbls = (Button) findViewById(R.id.bblbutton);
+           final Button gbls = (Button) findViewById(R.id.gblbutton);
+           final RelativeLayout Eborder = (RelativeLayout) findViewById(R.id.ebg);
+           final RelativeLayout Rborder = (RelativeLayout) findViewById(R.id.rbl);
+           final RelativeLayout Bborder = (RelativeLayout) findViewById(R.id.bbl);
+           final RelativeLayout Gborder = (RelativeLayout) findViewById(R.id.gbl);
+           final Button close = (Button) findViewById(R.id.close);
+
+           maps.setOnClickListener(new View.OnClickListener() {
+               @Override
+               public void onClick(View v)
+               {
+                   if (count == 0) {
+                       mapselector.setVisibility(view2.VISIBLE);
+                       count = 1;
+                   }
+                   else if (count == 1)
+                   {
+                       mapselector.setVisibility(view2.INVISIBLE);
+                       count = 0;
+                   }
+               }
+           });
+
+           close.setOnClickListener(new View.OnClickListener() {
+               @Override
+               public void onClick(View v) {
+                   if (count == 0) {
+                       mapselector.setVisibility(view2.VISIBLE);
+                       count = 1;
+                   }
+                   else if (count == 1)
+                   {
+                       mapselector.setVisibility(view2.INVISIBLE);
+                       count = 0;
+                   }
+               }
+           });
+
+           ebgs.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Eborder.setVisibility(view2.VISIBLE);
+                Rborder.setVisibility(view2.INVISIBLE);
+                Bborder.setVisibility(view2.INVISIBLE);
+                Gborder.setVisibility(View.INVISIBLE);
+            }
+        });
+
+            rbls.setOnClickListener(new View.OnClickListener()
+            {
+                @Override
+                public void onClick(View v)
+                {
+                    Eborder.setVisibility(view2.INVISIBLE);
+                    Rborder.setVisibility(view2.VISIBLE);
+                    Bborder.setVisibility(view2.INVISIBLE);
+                    Gborder.setVisibility(View.INVISIBLE);
+                }
+            });
+
+            bbls.setOnClickListener(new View.OnClickListener()
+            {
+                @Override
+                public void onClick(View v)
+                {
+                    Eborder.setVisibility(view2.INVISIBLE);
+                    Rborder.setVisibility(view2.INVISIBLE);
+                    Bborder.setVisibility(view2.VISIBLE);
+                    Gborder.setVisibility(View.INVISIBLE);
+                }
+            });
+
+            gbls.setOnClickListener(new View.OnClickListener()
+            {
+                @Override
+                public void onClick(View v)
+                {
+                    Eborder.setVisibility(view2.INVISIBLE);
+                    Rborder.setVisibility(view2.INVISIBLE);
+                    Bborder.setVisibility(view2.INVISIBLE);
+                    Gborder.setVisibility(View.VISIBLE);
+                }
+            });
 
 
             MainActivity.selectedLayout = 3;

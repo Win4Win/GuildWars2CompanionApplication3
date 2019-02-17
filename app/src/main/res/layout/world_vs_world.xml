@@ -1291,6 +1291,7 @@
         android:layout_height="450dp"
         android:background="@drawable/graylayout"
         android:orientation="vertical"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="@+id/gbl"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -1299,6 +1300,52 @@
         app:layout_constraintVertical_bias="0.0">
 
 
+        <Button
+            android:id="@+id/ebgbutton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/ebglayout"
+            android:text="ETERNAL BATTLEGROUNDS"
+            android:textColor="@android:color/background_light"
+            android:textSize="14sp"
+            tools:text="ETERNAL BATTLEGROUNDS" />
+
+        <Button
+            android:id="@+id/rblbutton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/redlayout"
+            android:text="RED BORDERLANDS"
+            android:textColor="@android:color/background_light"
+            tools:text="RED BORDERLANDS" />
+
+
+        <Button
+            android:id="@+id/bblbutton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bluelayout"
+            android:text="BLUE BORDERLANDS"
+            android:textColor="@android:color/background_light"
+            tools:text="BLUE BORDERLANDS" />
+
+        <Button
+            android:id="@+id/gblbutton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/greenlayout"
+            android:text="GREEN BORDERLANDS"
+            android:textColor="@android:color/background_light"
+            tools:text="GREEN BORDERLANDS" />
+
+        <Button
+            android:id="@+id/close"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/closelayout"
+            android:text="CLOSE"
+            android:textColor="@android:color/background_light"
+            tools:text="CLOSE" />
     </LinearLayout>
 
     <LinearLayout
