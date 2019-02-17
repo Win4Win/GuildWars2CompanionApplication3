@@ -675,7 +675,7 @@ public class worldVsWorld extends AppCompatActivity {
                                     //////////////////////////////////////////////////////////////////////////////////
                                     /////////////////////////////////////  GREEN BL  /////////////////////////////////
                                     //////////////////////////////////////////////////////////////////////////////////
-                                    JSONObject Green = (JSONObject) maps.get(1);
+                                    JSONObject Green = (JSONObject) maps.get(3);
                                     JSONArray Greenobjectives = Green.getJSONArray("objectives");
 
                                     for (int i = 0; i < Greenobjectives.length(); ++i)
@@ -749,7 +749,7 @@ public class worldVsWorld extends AppCompatActivity {
                                     //////////////////////////////////////////////////////////////////////////////////
                                     /////////////////////////////////////  BLUE BL  //////////////////////////////////
                                     //////////////////////////////////////////////////////////////////////////////////
-                                    JSONObject Blue = (JSONObject) maps.get(2);
+                                    JSONObject Blue = (JSONObject) maps.get(1);
                                     JSONArray Blueobjectives = Blue.getJSONArray("objectives");
 
                                     for (int i = 0; i < Blueobjectives.length(); ++i)
@@ -823,7 +823,7 @@ public class worldVsWorld extends AppCompatActivity {
                                     //////////////////////////////////////////////////////////////////////////////////
                                     /////////////////////////////////////  RED BL  ///////////////////////////////////
                                     //////////////////////////////////////////////////////////////////////////////////
-                                    JSONObject Red = (JSONObject) maps.get(3);
+                                    JSONObject Red = (JSONObject) maps.get(2);
                                     JSONArray Redobjectives = Red.getJSONArray("objectives");
 
 
@@ -854,7 +854,8 @@ public class worldVsWorld extends AppCompatActivity {
                                         {
 
 
-                                            if (temp.id.equals("1099-116")) {
+                                            if (temp.id.equals("1099-116"))
+                                            {
                                                 temp.color = (ImageView) findViewById(R.id.dustwhisper_well);
 
                                                 if (temp.owner.equals("Red")) {
@@ -869,8 +870,10 @@ public class worldVsWorld extends AppCompatActivity {
                                                     temp.color.setImageResource(R.drawable.green);
 
                                                 }
-                                            } else if (temp.id.equals("temp")) {
-                                                temp.color = (ImageView) findViewById(R.id.rogues_quarry);
+                                            }
+                                            else if (temp.id.equals("1099-114"))
+                                            {
+                                                temp.color = (ImageView) findViewById(R.id.ospreys_palace);
                                                 if (temp.owner.equals("Red")) {
                                                     temp.color.setImageResource(R.drawable.red);
 
@@ -884,6 +887,183 @@ public class worldVsWorld extends AppCompatActivity {
 
                                                 }
                                             }
+                                            else if (temp.id.equals("1099-99"))
+                                            {
+                                                temp.color = (ImageView) findViewById(R.id.hamms_labb);
+                                                if (temp.owner.equals("Red")) {
+                                                    temp.color.setImageResource(R.drawable.red);
+
+
+                                                } else if (temp.owner.equals("Blue")) {
+                                                    temp.color.setImageResource(R.drawable.blueicon);
+
+
+                                                } else if (temp.owner.equals("Green")) {
+                                                    temp.color.setImageResource(R.drawable.green);
+
+                                                }
+                                            }
+                                            else if (temp.id.equals("1099-113"))
+                                            {
+                                                temp.color = (ImageView) findViewById(R.id.stoic_rampart);
+                                                if (temp.owner.equals("Red")) {
+                                                    temp.color.setImageResource(R.drawable.red);
+
+
+                                                } else if (temp.owner.equals("Blue")) {
+                                                    temp.color.setImageResource(R.drawable.blueicon);
+
+
+                                                } else if (temp.owner.equals("Green")) {
+                                                    temp.color.setImageResource(R.drawable.green);
+
+                                                }
+                                            }
+                                            else if (temp.id.equals("1099-115"))
+                                            {
+                                                temp.color = (ImageView) findViewById(R.id.boettigers_hideway);
+                                                if (temp.owner.equals("Red")) {
+                                                    temp.color.setImageResource(R.drawable.red);
+
+
+                                                } else if (temp.owner.equals("Blue")) {
+                                                    temp.color.setImageResource(R.drawable.blueicon);
+
+
+                                                } else if (temp.owner.equals("Green")) {
+                                                    temp.color.setImageResource(R.drawable.green);
+
+                                                }
+                                            }
+                                            else if (temp.id.equals("1099-110"))
+                                            {
+                                                temp.color = (ImageView) findViewById(R.id.parched_outpost);
+                                                if (temp.owner.equals("Red")) {
+                                                    temp.color.setImageResource(R.drawable.red);
+
+
+                                                } else if (temp.owner.equals("Blue")) {
+                                                    temp.color.setImageResource(R.drawable.blueicon);
+
+
+                                                } else if (temp.owner.equals("Green")) {
+                                                    temp.color.setImageResource(R.drawable.green);
+
+                                                }
+                                            }
+                                            else if (temp.id.equals("1099-106"))
+                                            {
+                                                temp.color = (ImageView) findViewById(R.id.blistering_undercroft);
+                                                if (temp.owner.equals("Red")) {
+                                                    temp.color.setImageResource(R.drawable.red);
+
+
+                                                } else if (temp.owner.equals("Blue")) {
+                                                    temp.color.setImageResource(R.drawable.blueicon);
+
+
+                                                } else if (temp.owner.equals("Green")) {
+                                                    temp.color.setImageResource(R.drawable.green);
+
+                                                }
+                                            }
+                                            else if (temp.id.equals("1099-105"))
+                                            {
+                                                temp.color = (ImageView) findViewById(R.id.crankshaft_depot);
+                                                if (temp.owner.equals("Red")) {
+                                                    temp.color.setImageResource(R.drawable.red);
+
+
+                                                } else if (temp.owner.equals("Blue")) {
+                                                    temp.color.setImageResource(R.drawable.blueicon);
+
+
+                                                } else if (temp.owner.equals("Green")) {
+                                                    temp.color.setImageResource(R.drawable.green);
+
+                                                }
+                                            }
+                                            else if (temp.id.equals("1099-102"))
+                                            {
+                                                temp.color = (ImageView) findViewById(R.id.odel_academy);
+                                                if (temp.owner.equals("Red")) {
+                                                    temp.color.setImageResource(R.drawable.red);
+
+
+                                                } else if (temp.owner.equals("Blue")) {
+                                                    temp.color.setImageResource(R.drawable.blueicon);
+
+
+                                                } else if (temp.owner.equals("Green")) {
+                                                    temp.color.setImageResource(R.drawable.green);
+
+                                                }
+                                            }
+                                            else if (temp.id.equals("1099-109"))
+                                            {
+                                                temp.color = (ImageView) findViewById(R.id.roys_refuge);
+                                                if (temp.owner.equals("Red")) {
+                                                    temp.color.setImageResource(R.drawable.red);
+
+
+                                                } else if (temp.owner.equals("Blue")) {
+                                                    temp.color.setImageResource(R.drawable.blueicon);
+
+
+                                                } else if (temp.owner.equals("Green")) {
+                                                    temp.color.setImageResource(R.drawable.green);
+
+                                                }
+                                            }
+                                            else if (temp.id.equals("1099-101"))
+                                            {
+                                                temp.color = (ImageView) findViewById(R.id.mclains_encampment);
+                                                if (temp.owner.equals("Red")) {
+                                                    temp.color.setImageResource(R.drawable.red);
+
+
+                                                } else if (temp.owner.equals("Blue")) {
+                                                    temp.color.setImageResource(R.drawable.blueicon);
+
+
+                                                } else if (temp.owner.equals("Green")) {
+                                                    temp.color.setImageResource(R.drawable.green);
+
+                                                }
+                                            }
+                                            else if (temp.id.equals("1099-104"))
+                                            {
+                                                temp.color = (ImageView) findViewById(R.id.eternal_necropolis);
+                                                if (temp.owner.equals("Red")) {
+                                                    temp.color.setImageResource(R.drawable.red);
+
+
+                                                } else if (temp.owner.equals("Blue")) {
+                                                    temp.color.setImageResource(R.drawable.blueicon);
+
+
+                                                } else if (temp.owner.equals("Green")) {
+                                                    temp.color.setImageResource(R.drawable.green);
+
+                                                }
+                                            }
+                                            else if (temp.id.equals("1099-100"))
+                                            {
+                                                temp.color = (ImageView) findViewById(R.id.bauer_farmstead);
+                                                if (temp.owner.equals("Red")) {
+                                                    temp.color.setImageResource(R.drawable.red);
+
+
+                                                } else if (temp.owner.equals("Blue")) {
+                                                    temp.color.setImageResource(R.drawable.blueicon);
+
+
+                                                } else if (temp.owner.equals("Green")) {
+                                                    temp.color.setImageResource(R.drawable.green);
+
+                                                }
+                                            }
+
                                         } catch (Exception e)
                                         {
 
@@ -1038,148 +1218,156 @@ public class worldVsWorld extends AppCompatActivity {
         public void run()
         {
 
-
-
-            new Thread(new Runnable(){
-
-                public void run()
+                if (MainActivity.selectedLayout == 3)
                 {
 
+                    new Thread(new Runnable() {
 
-                    //TextView t; //to show the result, please declare and find it inside onCreate()
-
-
-                    if (worldVsWorld.completed == 1)
-                    {
-                        worldVsWorld.completed = 0;
+                        public void run() {
 
 
-                        try {
-                            // Create a URL for the desired page
-                            URL url = new URL("https://api.guildwars2.com/v2/wvw/matches/1-1"); //My text file location
-                            //First open the connection
-                            HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-                            conn.setConnectTimeout(60000); // timing out in a minute
-
-                            BufferedReader in = new BufferedReader(new InputStreamReader(conn.getInputStream()));
-
-                            //t=(TextView)findViewById(R.id.TextView1); // ideally do this in onCreate()
+                            //TextView t; //to show the result, please declare and find it inside onCreate()
 
 
-                            wvwURL = "";
+                            if (worldVsWorld.completed == 1) {
+                                worldVsWorld.completed = 0;
 
-                            String str;
-                            while ((str = in.readLine()) != null) {
-                                wvwURL = wvwURL + str;
-                            }
-
-                            WvW = new JSONObject(wvwURL);
-
-                            in.close();
-                        } catch (Exception e) {
-                            Log.d("MyTag", e.toString());
-                        }
-
-
-                        //since we are in background thread, to post results we have to go back to ui thread. do the following for that
-
-                        worldVsWorld.this.runOnUiThread(new Runnable() {
-                            public void run() {
 
                                 try {
+                                    // Create a URL for the desired page
+                                    URL url = new URL("https://api.guildwars2.com/v2/wvw/matches/1-1"); //My text file location
+                                    //First open the connection
+                                    HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+                                    conn.setConnectTimeout(60000); // timing out in a minute
+
+                                    BufferedReader in = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+
+                                    //t=(TextView)findViewById(R.id.TextView1); // ideally do this in onCreate()
 
 
-                                    JSONObject WvW = new JSONObject(wvwURL);
+                                    wvwURL = "";
 
-                                    JSONArray maps = WvW.getJSONArray("maps");
-
-                                    //////////////////////////////////////////////////////////////////////////////////
-                                    /////////////////////////////////////  EBG  //////////////////////////////////////
-                                    //////////////////////////////////////////////////////////////////////////////////
-                                    JSONObject EBG = (JSONObject) maps.get(0);
-                                    JSONArray EBGobjectives = EBG.getJSONArray("objectives");
-
-                                    if (worldVsWorld.Borderland == 0) {
-
-
-                                        for (int i = 0; i < EBGobjectives.length(); ++i)
-                                        {
-                                            JSONObject source = (JSONObject) EBGobjectives.get(i);
-                                            String temp = "" + source.get("owner");
-
-                                            try {
-                                                if (!worldVsWorld.Center.buildings.get(i).owner.equals(temp)) {
-                                                    if (temp.equals("Red")) {
-                                                        worldVsWorld.Center.buildings.get(i).color.setImageResource(R.drawable.red);
-                                                        worldVsWorld.Center.buildings.get(i).owner = "Red";
-                                                    } else if (temp.equals("Blue")) {
-                                                        worldVsWorld.Center.buildings.get(i).color.setImageResource(R.drawable.blueicon);
-                                                        worldVsWorld.Center.buildings.get(i).owner = "Blue";
-                                                    } else if (temp.equals("Green")) {
-                                                        worldVsWorld.Center.buildings.get(i).color.setImageResource(R.drawable.green);
-                                                        worldVsWorld.Center.buildings.get(i).owner = "Green";
-                                                    }
-
-                                                }
-                                            } catch (Exception e) {
-
-                                            }
-                                        }
+                                    String str;
+                                    while ((str = in.readLine()) != null) {
+                                        wvwURL = wvwURL + str;
                                     }
 
+                                    WvW = new JSONObject(wvwURL);
 
-                                    //////////////////////////////////////////////////////////////////////////////////
-                                    /////////////////////////////////////  GREEN BL  /////////////////////////////////
-                                    //////////////////////////////////////////////////////////////////////////////////
-                                    JSONObject Green = (JSONObject) maps.get(1);
-                                    JSONArray Greenobjectives = Green.getJSONArray("objectives");
-
-                                    if (worldVsWorld.Borderland == 1) {
-
-                                    }
-
-
-                                    //////////////////////////////////////////////////////////////////////////////////
-                                    /////////////////////////////////////  BLUE BL  //////////////////////////////////
-                                    //////////////////////////////////////////////////////////////////////////////////
-                                    JSONObject Blue = (JSONObject) maps.get(2);
-                                    JSONArray Blueobjectives = Blue.getJSONArray("objectives");
-
-
-                                    if (worldVsWorld.Borderland == 2) {
-
-                                    }
-
-                                    //////////////////////////////////////////////////////////////////////////////////
-                                    /////////////////////////////////////  RED BL  ///////////////////////////////////
-                                    //////////////////////////////////////////////////////////////////////////////////
-                                    JSONObject Red = (JSONObject) maps.get(3);
-                                    JSONArray Redobjectives = Red.getJSONArray("objectives");
-
-                                    if (worldVsWorld.Borderland == 3) {
-
-                                    }
-
-
-                                } catch (JSONException e) {
-                                    e.printStackTrace();
+                                    in.close();
+                                } catch (Exception e) {
+                                    Log.d("MyTag", e.toString());
                                 }
 
 
-                                worldVsWorld.completed = 1;
+                                //since we are in background thread, to post results we have to go back to ui thread. do the following for that
+
+                                worldVsWorld.this.runOnUiThread(new Runnable() {
+                                    public void run() {
+
+                                        try {
+
+
+                                            JSONObject WvW = new JSONObject(wvwURL);
+
+                                            JSONArray maps = WvW.getJSONArray("maps");
+
+                                            //////////////////////////////////////////////////////////////////////////////////
+                                            /////////////////////////////////////  EBG  //////////////////////////////////////
+                                            //////////////////////////////////////////////////////////////////////////////////
+                                            JSONObject EBG = (JSONObject) maps.get(0);
+                                            JSONArray EBGobjectives = EBG.getJSONArray("objectives");
+
+
+                                            for (int i = 0; i < EBGobjectives.length(); ++i) {
+                                                JSONObject source = (JSONObject) EBGobjectives.get(i);
+                                                String temp = "" + source.get("owner");
+
+                                                try {
+                                                    if (!worldVsWorld.Center.buildings.get(i).owner.equals(temp)) {
+                                                        if (temp.equals("Red")) {
+                                                            worldVsWorld.Center.buildings.get(i).color.setImageResource(R.drawable.red);
+                                                            worldVsWorld.Center.buildings.get(i).owner = "Red";
+                                                        } else if (temp.equals("Blue")) {
+                                                            worldVsWorld.Center.buildings.get(i).color.setImageResource(R.drawable.blueicon);
+                                                            worldVsWorld.Center.buildings.get(i).owner = "Blue";
+                                                        } else if (temp.equals("Green")) {
+                                                            worldVsWorld.Center.buildings.get(i).color.setImageResource(R.drawable.green);
+                                                            worldVsWorld.Center.buildings.get(i).owner = "Green";
+                                                        }
+
+                                                    }
+                                                } catch (Exception e) {
+
+                                                }
+                                            }
+
+
+                                            //////////////////////////////////////////////////////////////////////////////////
+                                            /////////////////////////////////////  GREEN BL  /////////////////////////////////
+                                            //////////////////////////////////////////////////////////////////////////////////
+                                            JSONObject Green = (JSONObject) maps.get(3);
+                                            JSONArray Greenobjectives = Green.getJSONArray("objectives");
+
+
+                                            //////////////////////////////////////////////////////////////////////////////////
+                                            /////////////////////////////////////  BLUE BL  //////////////////////////////////
+                                            //////////////////////////////////////////////////////////////////////////////////
+                                            JSONObject Blue = (JSONObject) maps.get(1);
+                                            JSONArray Blueobjectives = Blue.getJSONArray("objectives");
+
+
+                                            //////////////////////////////////////////////////////////////////////////////////
+                                            /////////////////////////////////////  RED BL  ///////////////////////////////////
+                                            //////////////////////////////////////////////////////////////////////////////////
+                                            JSONObject Red = (JSONObject) maps.get(2);
+                                            JSONArray Redobjectives = Red.getJSONArray("objectives");
+
+
+                                            for (int i = 0; i < Redobjectives.length(); ++i) {
+                                                JSONObject source = (JSONObject) Redobjectives.get(i);
+                                                String temp = "" + source.get("owner");
+
+                                                try {
+                                                    if (!worldVsWorld.Center.buildings.get(i).owner.equals(temp)) {
+                                                        if (temp.equals("Red")) {
+                                                            worldVsWorld.Center.buildings.get(i).color.setImageResource(R.drawable.red);
+                                                            worldVsWorld.Center.buildings.get(i).owner = "Red";
+                                                        } else if (temp.equals("Blue")) {
+                                                            worldVsWorld.Center.buildings.get(i).color.setImageResource(R.drawable.blueicon);
+                                                            worldVsWorld.Center.buildings.get(i).owner = "Blue";
+                                                        } else if (temp.equals("Green")) {
+                                                            worldVsWorld.Center.buildings.get(i).color.setImageResource(R.drawable.green);
+                                                            worldVsWorld.Center.buildings.get(i).owner = "Green";
+                                                        }
+
+                                                    }
+                                                } catch (Exception e) {
+
+                                                }
+                                            }
+
+
+                                        } catch (JSONException e) {
+                                            e.printStackTrace();
+                                        }
+
+
+                                        worldVsWorld.completed = 1;
+
+
+                                    }
+
+
+                                });
 
 
                             }
+                        }
 
 
-                        });
-
-
-                    }
+                    }).start();
                 }
-
-
-            }).start();
 
 
 
