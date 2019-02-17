@@ -705,23 +705,9 @@ public class worldVsWorld extends AppCompatActivity {
                                         {
 
 
-                                            if (temp.id.equals("temp")) {
-                                                temp.color = (ImageView) findViewById(R.id.veloka_slope);
+                                            if (temp.id.equals("95-53")) {
+                                                temp.color = (ImageView) findViewById(R.id.bluevale_refuge);
 
-                                                if (temp.owner.equals("Red")) {
-                                                    temp.color.setImageResource(R.drawable.red);
-
-
-                                                } else if (temp.owner.equals("Blue")) {
-                                                    temp.color.setImageResource(R.drawable.blueicon);
-
-
-                                                } else if (temp.owner.equals("Green")) {
-                                                    temp.color.setImageResource(R.drawable.green);
-
-                                                }
-                                            } else if (temp.id.equals("temp")) {
-                                                temp.color = (ImageView) findViewById(R.id.rogues_quarry);
                                                 if (temp.owner.equals("Red")) {
                                                     temp.color.setImageResource(R.drawable.red);
 
@@ -735,6 +721,187 @@ public class worldVsWorld extends AppCompatActivity {
 
                                                 }
                                             }
+                                           else if (temp.id.equals("95-40")) {
+                                                temp.color = (ImageView) findViewById(R.id.cragtop);
+                                                if (temp.owner.equals("Red")) {
+                                                    temp.color.setImageResource(R.drawable.red);
+
+
+                                                } else if (temp.owner.equals("Blue")) {
+                                                    temp.color.setImageResource(R.drawable.blueicon);
+
+
+                                                } else if (temp.owner.equals("Green")) {
+                                                    temp.color.setImageResource(R.drawable.green);
+
+                                                }
+                                            }
+                                            else if (temp.id.equals("95-35")) {
+                                                temp.color = (ImageView) findViewById(R.id.bluebriar);
+                                                if (temp.owner.equals("Red")) {
+                                                    temp.color.setImageResource(R.drawable.red);
+
+
+                                                } else if (temp.owner.equals("Blue")) {
+                                                    temp.color.setImageResource(R.drawable.blueicon);
+
+
+                                                } else if (temp.owner.equals("Green")) {
+                                                    temp.color.setImageResource(R.drawable.green);
+
+                                                }
+                                            }
+                                            else if (temp.id.equals("95-36")) {
+                                                temp.color = (ImageView) findViewById(R.id.redlake);
+                                                if (temp.owner.equals("Red")) {
+                                                    temp.color.setImageResource(R.drawable.red);
+
+
+                                                } else if (temp.owner.equals("Blue")) {
+                                                    temp.color.setImageResource(R.drawable.blueicon);
+
+
+                                                } else if (temp.owner.equals("Green")) {
+                                                    temp.color.setImageResource(R.drawable.green);
+
+                                                }
+                                            }
+                                            else if (temp.id.equals("95-33")) {
+                                                temp.color = (ImageView) findViewById(R.id.dreadfall_bay);
+                                                if (temp.owner.equals("Red")) {
+                                                    temp.color.setImageResource(R.drawable.red);
+
+
+                                                } else if (temp.owner.equals("Blue")) {
+                                                    temp.color.setImageResource(R.drawable.blueicon);
+
+
+                                                } else if (temp.owner.equals("Green")) {
+                                                    temp.color.setImageResource(R.drawable.green);
+
+                                                }
+                                            }
+                                            else if (temp.id.equals("95-39")) {
+                                                temp.color = (ImageView) findViewById(R.id.the_titanpaw);
+                                                if (temp.owner.equals("Red")) {
+                                                    temp.color.setImageResource(R.drawable.red);
+
+
+                                                } else if (temp.owner.equals("Blue")) {
+                                                    temp.color.setImageResource(R.drawable.blueicon);
+
+
+                                                } else if (temp.owner.equals("Green")) {
+                                                    temp.color.setImageResource(R.drawable.green);
+
+                                                }
+                                            }
+                                            else if (temp.id.equals("95-52")) {
+                                                temp.color = (ImageView) findViewById(R.id.faithleap);
+                                                if (temp.owner.equals("Red")) {
+                                                    temp.color.setImageResource(R.drawable.red);
+
+
+                                                } else if (temp.owner.equals("Blue")) {
+                                                    temp.color.setImageResource(R.drawable.blueicon);
+
+
+                                                } else if (temp.owner.equals("Green")) {
+                                                    temp.color.setImageResource(R.drawable.green);
+
+                                                }
+                                            }
+                                            else if (temp.id.equals("95-34")) {
+                                                temp.color = (ImageView) findViewById(R.id.heros_lodge);
+                                                if (temp.owner.equals("Red")) {
+                                                    temp.color.setImageResource(R.drawable.red);
+
+
+                                                } else if (temp.owner.equals("Blue")) {
+                                                    temp.color.setImageResource(R.drawable.blueicon);
+
+
+                                                } else if (temp.owner.equals("Green")) {
+                                                    temp.color.setImageResource(R.drawable.green);
+
+                                                }
+                                            }
+                                            else if (temp.id.equals("95-32")) {
+                                                temp.color = (ImageView) findViewById(R.id.shadaran_hills);
+                                                if (temp.owner.equals("Red")) {
+                                                    temp.color.setImageResource(R.drawable.red);
+
+
+                                                } else if (temp.owner.equals("Blue")) {
+                                                    temp.color.setImageResource(R.drawable.blueicon);
+
+
+                                                } else if (temp.owner.equals("Green")) {
+                                                    temp.color.setImageResource(R.drawable.green);
+
+                                                }
+                                            }
+                                            else if (temp.id.equals("95-51")) {
+                                                temp.color = (ImageView) findViewById(R.id.foghaven);
+                                                if (temp.owner.equals("Red")) {
+                                                    temp.color.setImageResource(R.drawable.red);
+
+
+                                                } else if (temp.owner.equals("Blue")) {
+                                                    temp.color.setImageResource(R.drawable.blueicon);
+
+
+                                                } else if (temp.owner.equals("Green")) {
+                                                    temp.color.setImageResource(R.drawable.green);
+
+                                                }
+                                            }
+                                            else if (temp.id.equals("95-37")) {
+                                                temp.color = (ImageView) findViewById(R.id.green_garrison);
+                                                if (temp.owner.equals("Red")) {
+                                                    temp.color.setImageResource(R.drawable.red);
+
+
+                                                } else if (temp.owner.equals("Blue")) {
+                                                    temp.color.setImageResource(R.drawable.blueicon);
+
+
+                                                } else if (temp.owner.equals("Green")) {
+                                                    temp.color.setImageResource(R.drawable.green);
+
+                                                }
+                                            }
+                                            else if (temp.id.equals("95-38")) {
+                                                temp.color = (ImageView) findViewById(R.id.sunnyhill);
+                                                if (temp.owner.equals("Red")) {
+                                                    temp.color.setImageResource(R.drawable.red);
+
+
+                                                } else if (temp.owner.equals("Blue")) {
+                                                    temp.color.setImageResource(R.drawable.blueicon);
+
+
+                                                } else if (temp.owner.equals("Green")) {
+                                                    temp.color.setImageResource(R.drawable.green);
+
+                                                }
+                                            }
+                                            else if (temp.id.equals("95-50")) {
+                                                temp.color = (ImageView) findViewById(R.id.redwater_lowlands);
+                                                if (temp.owner.equals("Red")) {
+                                                    temp.color.setImageResource(R.drawable.red);
+
+
+                                                } else if (temp.owner.equals("Blue")) {
+                                                    temp.color.setImageResource(R.drawable.blueicon);
+
+
+                                                } else if (temp.owner.equals("Green")) {
+                                                    temp.color.setImageResource(R.drawable.green);
+
+                                                }
+                                            }
+
                                         } catch (Exception e)
                                         {
 
@@ -1475,6 +1642,31 @@ public class worldVsWorld extends AppCompatActivity {
                                             //////////////////////////////////////////////////////////////////////////////////
                                             JSONObject Green = (JSONObject) maps.get(3);
                                             JSONArray Greenobjectives = Green.getJSONArray("objectives");
+
+
+
+                                            for (int i = 0; i < Greenobjectives.length(); ++i) {
+                                                JSONObject source = (JSONObject) Greenobjectives.get(i);
+                                                String temp = "" + source.get("owner");
+
+                                                try {
+                                                    if (!worldVsWorld.Center.buildings.get(i).owner.equals(temp)) {
+                                                        if (temp.equals("Red")) {
+                                                            worldVsWorld.Center.buildings.get(i).color.setImageResource(R.drawable.red);
+                                                            worldVsWorld.Center.buildings.get(i).owner = "Red";
+                                                        } else if (temp.equals("Blue")) {
+                                                            worldVsWorld.Center.buildings.get(i).color.setImageResource(R.drawable.blueicon);
+                                                            worldVsWorld.Center.buildings.get(i).owner = "Blue";
+                                                        } else if (temp.equals("Green")) {
+                                                            worldVsWorld.Center.buildings.get(i).color.setImageResource(R.drawable.green);
+                                                            worldVsWorld.Center.buildings.get(i).owner = "Green";
+                                                        }
+
+                                                    }
+                                                } catch (Exception e) {
+
+                                                }
+                                            }
 
 
                                             //////////////////////////////////////////////////////////////////////////////////
