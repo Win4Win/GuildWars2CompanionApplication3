@@ -461,8 +461,134 @@
         app:layout_constraintTop_toTopOf="parent">
 
 
+        <ImageView
+            android:id="@+id/hamms_labb"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="96dp"
+            app:srcCompat="@drawable/red" />
+
+        <ImageView
+            android:id="@+id/stoic_rampart"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginTop="177dp"
+            app:srcCompat="@drawable/red" />
+
+        <ImageView
+            android:id="@+id/odel_academy"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="69dp"
+            android:layout_marginTop="87dp"
+            app:srcCompat="@drawable/red" />
+
+        <ImageView
+            android:id="@+id/eternal_necropolis"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/hamms_labb"
+            android:layout_marginEnd="58dp"
+            app:srcCompat="@drawable/red" />
+
+        <ImageView
+            android:id="@+id/roys_refuge"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="-58dp"
+            android:layout_marginTop="167dp"
+            android:layout_toEndOf="@+id/eternal_necropolis"
+            app:srcCompat="@drawable/red" />
+
+        <ImageView
+            android:id="@+id/boettigers_hideway"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="152dp"
+            app:srcCompat="@drawable/red" />
+
+        <ImageView
+            android:id="@+id/mclains_encampment"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="115dp"
+            android:layout_marginStart="42dp"
+            app:srcCompat="@drawable/green" />
+
+        <ImageView
+            android:id="@+id/parched_outpost"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="107dp"
+            android:layout_marginStart="115dp"
+            app:srcCompat="@drawable/green" />
+
+        <ImageView
+            android:id="@+id/dustwhisper_well"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="29dp"
+            app:srcCompat="@drawable/red" />
+
+        <ImageView
+            android:id="@+id/crankshaft_depot"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/parched_outpost"
+            android:layout_marginEnd="110dp"
+            android:layout_marginTop="-107dp"
+            app:srcCompat="@drawable/blueicon" />
+
+        <ImageView
+            android:id="@+id/bauer_farmstead"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/parched_outpost"
+            android:layout_marginEnd="36dp"
+            app:srcCompat="@drawable/blueicon" />
+
+        <ImageView
+            android:id="@+id/ospreys_palace"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/roys_refuge"
+            android:layout_marginBottom="196dp"
+            app:srcCompat="@drawable/blueicon" />
+
+        <ImageView
+            android:id="@+id/blistering_undercroft"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="205dp"
+            android:layout_marginStart="23dp"
+            app:srcCompat="@drawable/green" />
+
+
         <Button
-            android:id="@+id/tower101"
+            android:id="@+id/keep102"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_alignParentBottom="true"
@@ -472,241 +598,119 @@
             android:background="@drawable/keep" />
 
         <Button
-            android:id="@+id/tower102"
+            android:id="@+id/camp101"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="96dp"
+            android:background="@drawable/camp" />
+
+        <Button
+            android:id="@+id/keep101"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginTop="177dp"
+            android:background="@drawable/keep" />
+
+        <Button
+            android:id="@+id/tower101"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="69dp"
+            android:layout_marginTop="87dp"
+            android:background="@drawable/tower" />
+
+        <Button
+            android:id="@+id/camp103"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="-58dp"
+            android:layout_marginTop="167dp"
+            android:layout_toEndOf="@+id/eternal_necropolis"
+            android:background="@drawable/camp" />
+
+        <Button
+            android:id="@+id/camp102"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="152dp"
+            android:background="@drawable/camp" />
+
+        <Button
+            android:id="@+id/camp104"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="115dp"
+            android:layout_marginStart="42dp"
             android:background="@drawable/camp" />
 
         <Button
             android:id="@+id/tower103"
             android:layout_width="35dp"
             android:layout_height="35dp"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="107dp"
+            android:layout_marginStart="115dp"
+            android:background="@drawable/tower" />
 
-            android:layout_marginTop="177dp"
-            android:background="@drawable/keep" />
+        <Button
+            android:id="@+id/camp105"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="29dp"
+            android:background="@drawable/camp" />
+
         <Button
             android:id="@+id/tower104"
             android:layout_width="35dp"
             android:layout_height="35dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="69dp"
-            android:layout_marginTop="87dp"
-            android:background="@drawable/tower" />
-
-        <Button
-            android:id="@+id/tower105"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="-58dp"
-            android:layout_marginTop="167dp"
-            android:layout_toEndOf="@+id/woods4"
-            android:background="@drawable/camp" />
-
-        <Button
-            android:id="@+id/tower106"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="14dp"
-            android:layout_marginTop="152dp"
-            android:background="@drawable/camp" />
-
-        <Button
-            android:id="@+id/tower107"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginBottom="115dp"
-            android:layout_marginStart="42dp"
-            android:background="@drawable/camp" />
-        <Button
-            android:id="@+id/tower108"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginBottom="107dp"
-            android:layout_marginStart="115dp"
-            android:background="@drawable/tower" />
-
-        <Button
-            android:id="@+id/tower109"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="29dp"
-            android:background="@drawable/camp" />
-        <Button
-            android:id="@+id/tower110"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
             android:layout_alignParentEnd="true"
-            android:layout_below="@+id/woods8"
+            android:layout_below="@+id/parched_outpost"
             android:layout_marginEnd="110dp"
             android:layout_marginTop="-107dp"
             android:background="@drawable/tower" />
 
         <Button
-            android:id="@+id/tower111"
+            android:id="@+id/camp106"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_alignParentEnd="true"
-            android:layout_alignTop="@+id/woods8"
+            android:layout_alignTop="@+id/parched_outpost"
             android:layout_marginEnd="36dp"
             android:background="@drawable/camp" />
 
         <Button
-            android:id="@+id/tower112"
+            android:id="@+id/keep103"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_alignParentBottom="true"
-            android:layout_alignStart="@+id/woods5"
+            android:layout_alignStart="@+id/roys_refuge"
             android:layout_marginBottom="196dp"
             android:background="@drawable/keep" />
 
         <Button
-            android:id="@+id/tower113"
+            android:id="@+id/tower102"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_alignParentEnd="true"
-            android:layout_alignTop="@+id/woods2"
+            android:layout_alignTop="@+id/hamms_labb"
             android:layout_marginEnd="58dp"
             android:background="@drawable/tower" />
-
-        <ImageView
-            android:id="@+id/woods2"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="96dp"
-            app:srcCompat="@drawable/red" />
-
-        <ImageView
-            android:id="@+id/woods1"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-
-            android:layout_marginTop="177dp"
-            app:srcCompat="@drawable/red" />
-
-        <ImageView
-            android:id="@+id/woods3"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="69dp"
-            android:layout_marginTop="87dp"
-            app:srcCompat="@drawable/red" />
-
-        <ImageView
-            android:id="@+id/woods4"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignTop="@+id/woods2"
-            android:layout_marginEnd="58dp"
-            app:srcCompat="@drawable/red" />
-
-        <ImageView
-            android:id="@+id/woods5"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="-58dp"
-            android:layout_marginTop="167dp"
-            android:layout_toEndOf="@+id/woods4"
-            app:srcCompat="@drawable/red" />
-
-        <ImageView
-            android:id="@+id/woods6"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="14dp"
-            android:layout_marginTop="152dp"
-            app:srcCompat="@drawable/red" />
-
-        <ImageView
-            android:id="@+id/woods7"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginBottom="115dp"
-            android:layout_marginStart="42dp"
-            app:srcCompat="@drawable/green" />
-
-        <ImageView
-            android:id="@+id/woods8"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginBottom="107dp"
-            android:layout_marginStart="115dp"
-            app:srcCompat="@drawable/green" />
-
-        <ImageView
-            android:id="@+id/woods9"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="29dp"
-            app:srcCompat="@drawable/red" />
-
-        <ImageView
-            android:id="@+id/woods10"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:layout_alignParentEnd="true"
-            android:layout_below="@+id/woods8"
-            android:layout_marginEnd="110dp"
-            android:layout_marginTop="-107dp"
-            app:srcCompat="@drawable/blueicon" />
-
-        <ImageView
-            android:id="@+id/woods11"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignTop="@+id/woods8"
-            android:layout_marginEnd="36dp"
-            app:srcCompat="@drawable/blueicon" />
-
-        <ImageView
-            android:id="@+id/woods12"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:layout_alignParentBottom="true"
-            android:layout_alignStart="@+id/woods5"
-            android:layout_marginBottom="196dp"
-            app:srcCompat="@drawable/blueicon" />
-
-        <ImageView
-            android:id="@+id/woods13"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginBottom="205dp"
-            android:layout_marginStart="23dp"
-            app:srcCompat="@drawable/green" />
 
 
     </RelativeLayout>

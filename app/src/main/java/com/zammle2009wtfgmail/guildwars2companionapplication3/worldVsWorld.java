@@ -701,6 +701,45 @@ public class worldVsWorld extends AppCompatActivity {
                                         temp.owner = "" + source.get("owner");
 
 
+                                        try
+                                        {
+
+
+                                            if (temp.id.equals("temp")) {
+                                                temp.color = (ImageView) findViewById(R.id.veloka_slope);
+
+                                                if (temp.owner.equals("Red")) {
+                                                    temp.color.setImageResource(R.drawable.red);
+
+
+                                                } else if (temp.owner.equals("Blue")) {
+                                                    temp.color.setImageResource(R.drawable.blueicon);
+
+
+                                                } else if (temp.owner.equals("Green")) {
+                                                    temp.color.setImageResource(R.drawable.green);
+
+                                                }
+                                            } else if (temp.id.equals("temp")) {
+                                                temp.color = (ImageView) findViewById(R.id.rogues_quarry);
+                                                if (temp.owner.equals("Red")) {
+                                                    temp.color.setImageResource(R.drawable.red);
+
+
+                                                } else if (temp.owner.equals("Blue")) {
+                                                    temp.color.setImageResource(R.drawable.blueicon);
+
+
+                                                } else if (temp.owner.equals("Green")) {
+                                                    temp.color.setImageResource(R.drawable.green);
+
+                                                }
+                                            }
+                                        } catch (Exception e)
+                                        {
+
+                                        }
+
 
                                         worldVsWorld.greenBorderlands.buildings.add(temp);
 
@@ -737,6 +776,44 @@ public class worldVsWorld extends AppCompatActivity {
 
 
 
+                                        try
+                                        {
+
+
+                                            if (temp.id.equals("temp")) {
+                                                temp.color = (ImageView) findViewById(R.id.veloka_slope);
+
+                                                if (temp.owner.equals("Red")) {
+                                                    temp.color.setImageResource(R.drawable.red);
+
+
+                                                } else if (temp.owner.equals("Blue")) {
+                                                    temp.color.setImageResource(R.drawable.blueicon);
+
+
+                                                } else if (temp.owner.equals("Green")) {
+                                                    temp.color.setImageResource(R.drawable.green);
+
+                                                }
+                                            } else if (temp.id.equals("temp")) {
+                                                temp.color = (ImageView) findViewById(R.id.rogues_quarry);
+                                                if (temp.owner.equals("Red")) {
+                                                    temp.color.setImageResource(R.drawable.red);
+
+
+                                                } else if (temp.owner.equals("Blue")) {
+                                                    temp.color.setImageResource(R.drawable.blueicon);
+
+
+                                                } else if (temp.owner.equals("Green")) {
+                                                    temp.color.setImageResource(R.drawable.green);
+
+                                                }
+                                            }
+                                        } catch (Exception e)
+                                        {
+
+                                        }
 
 
                                         worldVsWorld.blueBorderlands.buildings.add(temp);
@@ -772,6 +849,45 @@ public class worldVsWorld extends AppCompatActivity {
                                         temp.last_flipped = "" + source.get("last_flipped");
                                         temp.owner = "" + source.get("owner");
 
+
+                                        try
+                                        {
+
+
+                                            if (temp.id.equals("1099-116")) {
+                                                temp.color = (ImageView) findViewById(R.id.dustwhisper_well);
+
+                                                if (temp.owner.equals("Red")) {
+                                                    temp.color.setImageResource(R.drawable.red);
+
+
+                                                } else if (temp.owner.equals("Blue")) {
+                                                    temp.color.setImageResource(R.drawable.blueicon);
+
+
+                                                } else if (temp.owner.equals("Green")) {
+                                                    temp.color.setImageResource(R.drawable.green);
+
+                                                }
+                                            } else if (temp.id.equals("temp")) {
+                                                temp.color = (ImageView) findViewById(R.id.rogues_quarry);
+                                                if (temp.owner.equals("Red")) {
+                                                    temp.color.setImageResource(R.drawable.red);
+
+
+                                                } else if (temp.owner.equals("Blue")) {
+                                                    temp.color.setImageResource(R.drawable.blueicon);
+
+
+                                                } else if (temp.owner.equals("Green")) {
+                                                    temp.color.setImageResource(R.drawable.green);
+
+                                                }
+                                            }
+                                        } catch (Exception e)
+                                        {
+
+                                        }
 
 
                                         worldVsWorld.redBorderlands.buildings.add(temp);
