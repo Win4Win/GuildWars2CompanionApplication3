@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="506dp"
         android:background="@drawable/ebg"
-        android:visibility="invisible"
+        android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/icons2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -985,7 +985,7 @@
         android:layout_width="match_parent"
         android:layout_height="506dp"
         android:background="@drawable/blue"
-        android:visibility="visible"
+        android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/icons2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -1125,6 +1125,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="46dp"
             android:background="@drawable/camp" />
+
         <Button
             android:id="@+id/keep301"
             android:layout_width="35dp"
@@ -1173,6 +1174,7 @@
             android:layout_marginStart="73dp"
             android:layout_marginTop="180dp"
             android:background="@drawable/camp" />
+
         <Button
             android:id="@+id/keep303"
             android:layout_width="35dp"
@@ -1228,6 +1230,7 @@
             android:layout_marginBottom="137dp"
             android:layout_marginEnd="124dp"
             android:background="@drawable/tower" />
+
         <Button
             android:id="@+id/keep302"
             android:layout_width="35dp"
@@ -1241,6 +1244,62 @@
 
     </RelativeLayout>
 
+
+
+
+    <LinearLayout
+        android:id="@+id/topviewWvW"
+        android:layout_width="384dp"
+        android:layout_height="54dp"
+        android:background="@drawable/grayhud"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="66dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/list_icon"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/serverName"
+            android:layout_width="275dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:text="SERVER_NAME"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            tools:text="SERVER_NAME" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="66dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mapselector"
+        android:layout_width="228dp"
+        android:layout_height="450dp"
+        android:background="@drawable/graylayout"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/gbl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topviewWvW"
+        app:layout_constraintVertical_bias="0.0">
+
+
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/icons2"
@@ -1332,41 +1391,5 @@
             tools:text="More" />
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/topviewWvW"
-        android:layout_width="380dp"
-        android:layout_height="54dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <Button
-            android:id="@+id/button"
-            android:layout_width="66dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/settings2"
-            android:padding="10dp" />
-
-        <TextView
-            android:id="@+id/serverName"
-            android:layout_width="275dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="top"
-            android:text="SERVER_NAME"
-            android:textAlignment="center"
-            android:textColor="@android:color/background_light"
-            android:textSize="24sp"
-            tools:text="SERVER_NAME" />
-
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="66dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@android:color/transparent" />
-    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
