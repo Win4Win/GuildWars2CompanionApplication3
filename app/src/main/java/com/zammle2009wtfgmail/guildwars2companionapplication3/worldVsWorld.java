@@ -86,11 +86,13 @@ public class worldVsWorld extends AppCompatActivity {
                {
                    if (count == 0) {
                        mapselector.setVisibility(view2.VISIBLE);
+
                        count = 1;
                    }
                    else if (count == 1)
                    {
                        mapselector.setVisibility(view2.INVISIBLE);
+
                        count = 0;
                    }
                }
@@ -101,11 +103,13 @@ public class worldVsWorld extends AppCompatActivity {
                public void onClick(View v) {
                    if (count == 0) {
                        mapselector.setVisibility(view2.VISIBLE);
+
                        count = 1;
                    }
                    else if (count == 1)
                    {
                        mapselector.setVisibility(view2.INVISIBLE);
+
                        count = 0;
                    }
                }
@@ -1655,7 +1659,7 @@ public class worldVsWorld extends AppCompatActivity {
                         public void run() {
 
 
-                            //TextView t; //to show the result, please declare and find it inside onCreate()
+
 
 
                             if (worldVsWorld.completed == 1) {
@@ -1745,16 +1749,16 @@ public class worldVsWorld extends AppCompatActivity {
                                                 String temp = "" + source.get("owner");
 
                                                 try {
-                                                    if (!worldVsWorld.Center.buildings.get(i).owner.equals(temp)) {
+                                                    if (!worldVsWorld.greenBorderlands.buildings.get(i).owner.equals(temp)) {
                                                         if (temp.equals("Red")) {
-                                                            worldVsWorld.Center.buildings.get(i).color.setImageResource(R.drawable.red);
-                                                            worldVsWorld.Center.buildings.get(i).owner = "Red";
+                                                            worldVsWorld.greenBorderlands.buildings.get(i).color.setImageResource(R.drawable.red);
+                                                            worldVsWorld.greenBorderlands.buildings.get(i).owner = "Red";
                                                         } else if (temp.equals("Blue")) {
-                                                            worldVsWorld.Center.buildings.get(i).color.setImageResource(R.drawable.blueicon);
-                                                            worldVsWorld.Center.buildings.get(i).owner = "Blue";
+                                                            worldVsWorld.greenBorderlands.buildings.get(i).color.setImageResource(R.drawable.blueicon);
+                                                            worldVsWorld.greenBorderlands.buildings.get(i).owner = "Blue";
                                                         } else if (temp.equals("Green")) {
-                                                            worldVsWorld.Center.buildings.get(i).color.setImageResource(R.drawable.green);
-                                                            worldVsWorld.Center.buildings.get(i).owner = "Green";
+                                                            worldVsWorld.greenBorderlands.buildings.get(i).color.setImageResource(R.drawable.green);
+                                                            worldVsWorld.greenBorderlands.buildings.get(i).owner = "Green";
                                                         }
 
                                                     }
@@ -1776,16 +1780,16 @@ public class worldVsWorld extends AppCompatActivity {
                                                 String temp = "" + source.get("owner");
 
                                                 try {
-                                                    if (!worldVsWorld.Center.buildings.get(i).owner.equals(temp)) {
+                                                    if (!worldVsWorld.blueBorderlands.buildings.get(i).owner.equals(temp)) {
                                                         if (temp.equals("Red")) {
-                                                            worldVsWorld.Center.buildings.get(i).color.setImageResource(R.drawable.red);
-                                                            worldVsWorld.Center.buildings.get(i).owner = "Red";
+                                                            worldVsWorld.blueBorderlands.buildings.get(i).color.setImageResource(R.drawable.red);
+                                                            worldVsWorld.blueBorderlands.buildings.get(i).owner = "Red";
                                                         } else if (temp.equals("Blue")) {
-                                                            worldVsWorld.Center.buildings.get(i).color.setImageResource(R.drawable.blueicon);
-                                                            worldVsWorld.Center.buildings.get(i).owner = "Blue";
+                                                            worldVsWorld.blueBorderlands.buildings.get(i).color.setImageResource(R.drawable.blueicon);
+                                                            worldVsWorld.blueBorderlands.buildings.get(i).owner = "Blue";
                                                         } else if (temp.equals("Green")) {
-                                                            worldVsWorld.Center.buildings.get(i).color.setImageResource(R.drawable.green);
-                                                            worldVsWorld.Center.buildings.get(i).owner = "Green";
+                                                            worldVsWorld.blueBorderlands.buildings.get(i).color.setImageResource(R.drawable.green);
+                                                            worldVsWorld.blueBorderlands.buildings.get(i).owner = "Green";
                                                         }
 
                                                     }
@@ -1809,16 +1813,16 @@ public class worldVsWorld extends AppCompatActivity {
                                                 String temp = "" + source.get("owner");
 
                                                 try {
-                                                    if (!worldVsWorld.Center.buildings.get(i).owner.equals(temp)) {
+                                                    if (!worldVsWorld.redBorderlands.buildings.get(i).owner.equals(temp)) {
                                                         if (temp.equals("Red")) {
-                                                            worldVsWorld.Center.buildings.get(i).color.setImageResource(R.drawable.red);
-                                                            worldVsWorld.Center.buildings.get(i).owner = "Red";
+                                                            worldVsWorld.redBorderlands.buildings.get(i).color.setImageResource(R.drawable.red);
+                                                            worldVsWorld.redBorderlands.buildings.get(i).owner = "Red";
                                                         } else if (temp.equals("Blue")) {
-                                                            worldVsWorld.Center.buildings.get(i).color.setImageResource(R.drawable.blueicon);
-                                                            worldVsWorld.Center.buildings.get(i).owner = "Blue";
+                                                            worldVsWorld.redBorderlands.buildings.get(i).color.setImageResource(R.drawable.blueicon);
+                                                            worldVsWorld.redBorderlands.buildings.get(i).owner = "Blue";
                                                         } else if (temp.equals("Green")) {
-                                                            worldVsWorld.Center.buildings.get(i).color.setImageResource(R.drawable.green);
-                                                            worldVsWorld.Center.buildings.get(i).owner = "Green";
+                                                            worldVsWorld.redBorderlands.buildings.get(i).color.setImageResource(R.drawable.green);
+                                                            worldVsWorld.redBorderlands.buildings.get(i).owner = "Green";
                                                         }
 
                                                     }

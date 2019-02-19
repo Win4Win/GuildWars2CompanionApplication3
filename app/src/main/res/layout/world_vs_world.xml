@@ -1285,13 +1285,26 @@
             android:background="@android:color/transparent" />
     </LinearLayout>
 
+    <Button
+        android:id="@+id/background"
+        android:layout_width="149dp"
+        android:layout_height="436dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/trans2"
+        app:layout_constraintBottom_toTopOf="@+id/icons2"
+        app:layout_constraintEnd_toEndOf="@+id/gbl"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toEndOf="@+id/mapselector"
+        app:layout_constraintTop_toBottomOf="@+id/topviewWvW" />
+
+
     <LinearLayout
         android:id="@+id/mapselector"
         android:layout_width="228dp"
         android:layout_height="450dp"
         android:background="@drawable/graylayout"
         android:orientation="vertical"
-        android:visibility="invisible"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="@+id/gbl"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -1437,6 +1450,8 @@
             app:layout_constraintVertical_bias="1.0"
             tools:text="More" />
     </LinearLayout>
+
+
 
 
 </android.support.constraint.ConstraintLayout>
