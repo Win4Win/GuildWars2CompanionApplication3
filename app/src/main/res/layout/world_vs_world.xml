@@ -6,6 +6,19 @@
     android:layout_height="match_parent"
     android:background="@drawable/lighterbackground">
 
+    <Button
+        android:id="@+id/background4"
+        android:layout_width="149dp"
+        android:layout_height="436dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/trans2"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/icons2"
+        app:layout_constraintEnd_toEndOf="@+id/gbl"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toEndOf="@+id/mapselector"
+        app:layout_constraintTop_toBottomOf="@+id/topviewWvW" />
+
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -1245,14 +1258,13 @@
     </RelativeLayout>
 
 
-
-
     <LinearLayout
         android:id="@+id/topviewWvW"
         android:layout_width="384dp"
         android:layout_height="54dp"
         android:background="@drawable/grayhud"
         android:orientation="horizontal"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -1285,18 +1297,6 @@
             android:background="@android:color/transparent" />
     </LinearLayout>
 
-    <Button
-        android:id="@+id/background"
-        android:layout_width="149dp"
-        android:layout_height="436dp"
-        android:layout_alignParentTop="true"
-        android:background="@drawable/trans2"
-        app:layout_constraintBottom_toTopOf="@+id/icons2"
-        app:layout_constraintEnd_toEndOf="@+id/gbl"
-        app:layout_constraintHorizontal_bias="0.6"
-        app:layout_constraintStart_toEndOf="@+id/mapselector"
-        app:layout_constraintTop_toBottomOf="@+id/topviewWvW" />
-
 
     <LinearLayout
         android:id="@+id/mapselector"
@@ -1304,7 +1304,7 @@
         android:layout_height="450dp"
         android:background="@drawable/graylayout"
         android:orientation="vertical"
-        android:visibility="visible"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="@+id/gbl"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

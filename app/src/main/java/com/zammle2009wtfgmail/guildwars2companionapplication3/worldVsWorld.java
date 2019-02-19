@@ -79,6 +79,7 @@ public class worldVsWorld extends AppCompatActivity {
            final RelativeLayout Bborder = (RelativeLayout) findViewById(R.id.bbl);
            final RelativeLayout Gborder = (RelativeLayout) findViewById(R.id.gbl);
            final Button close = (Button) findViewById(R.id.close);
+           final Button closeout = (Button) findViewById(R.id.background4);
 
            maps.setOnClickListener(new View.OnClickListener() {
                @Override
@@ -86,12 +87,14 @@ public class worldVsWorld extends AppCompatActivity {
                {
                    if (count == 0) {
                        mapselector.setVisibility(view2.VISIBLE);
+                       closeout.setVisibility(view2.VISIBLE);
 
                        count = 1;
                    }
                    else if (count == 1)
                    {
                        mapselector.setVisibility(view2.INVISIBLE);
+                       closeout.setVisibility(view2.INVISIBLE);
 
                        count = 0;
                    }
@@ -103,12 +106,36 @@ public class worldVsWorld extends AppCompatActivity {
                public void onClick(View v) {
                    if (count == 0) {
                        mapselector.setVisibility(view2.VISIBLE);
+                       closeout.setVisibility(view2.VISIBLE);
 
                        count = 1;
                    }
                    else if (count == 1)
                    {
                        mapselector.setVisibility(view2.INVISIBLE);
+                       closeout.setVisibility(view2.INVISIBLE);
+
+
+                       count = 0;
+                   }
+               }
+           });
+
+           closeout.setOnClickListener(new View.OnClickListener() {
+               @Override
+               public void onClick(View v)
+               {
+                   if (count == 0) {
+                       mapselector.setVisibility(view2.VISIBLE);
+                       closeout.setVisibility(view2.VISIBLE);
+
+                       count = 1;
+                   }
+                   else if (count == 1)
+                   {
+                       mapselector.setVisibility(view2.INVISIBLE);
+                       closeout.setVisibility(view2.INVISIBLE);
+
 
                        count = 0;
                    }
