@@ -7,18 +7,17 @@
     android:background="@drawable/background">
 
 
-
-
-    <LinearLayout
+    <RelativeLayout
         android:id="@+id/gearlayout"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/icons"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/hero_view_holder"
-        app:layout_constraintVertical_bias="0.692">
+        app:layout_constraintVertical_bias="0.0">
 
 
         <RelativeLayout
@@ -60,10 +59,206 @@
                 android:background="@drawable/alterlayouticon2" />
         </RelativeLayout>
 
+
+        <LinearLayout
+            android:id="@+id/vertical"
+            android:layout_width="match_parent"
+            android:layout_height="373dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="23dp"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            tools:layout_editor_absoluteX="159dp"
+            tools:layout_editor_absoluteY="294dp">
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+                        android:id="@+id/weaponv"
+                        android:layout_width="match_parent"
+                        android:layout_height="41dp"
+                        android:background="@drawable/selectedblack"
+                        android:visibility="visible">
+
+
+                        <TextView
+                            android:id="@+id/weapontextv"
+                            android:layout_width="348dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="Weapons"
+                            android:textColor="@android:color/background_light"
+                            tools:layout_editor_absoluteX="63dp"
+                            tools:layout_editor_absoluteY="113dp"
+                            tools:text="Weapons" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/imageView7v"
+                        android:layout_width="wrap_content"
+                        android:layout_height="5dp"
+                        app:srcCompat="@drawable/spacing3" />
+
+
+                    <ImageView
+                        android:id="@+id/imageView8v"
+                        android:layout_width="wrap_content"
+                        android:layout_height="15dp"
+                        app:srcCompat="@drawable/spacing3" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/armorv"
+                        android:layout_width="match_parent"
+                        android:layout_height="41dp"
+                        android:background="@drawable/selectedblack"
+                        android:visibility="visible">
+
+
+                        <TextView
+                            android:id="@+id/armortextv"
+                            android:layout_width="348dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="Armor"
+                            android:textColor="@android:color/background_light"
+                            tools:layout_editor_absoluteX="63dp"
+                            tools:layout_editor_absoluteY="113dp"
+                            tools:text="Armor" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/belowarmorspcaev"
+                        android:layout_width="wrap_content"
+                        android:layout_height="5dp"
+                        app:srcCompat="@drawable/spacing3" />
+
+                    <ImageView
+                        android:id="@+id/imageView9v"
+                        android:layout_width="wrap_content"
+                        android:layout_height="15dp"
+                        app:srcCompat="@drawable/spacing3" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/trinketv"
+                        android:layout_width="match_parent"
+                        android:layout_height="41dp"
+                        android:background="@drawable/selectedblack"
+                        android:visibility="visible">
+
+
+                        <TextView
+                            android:id="@+id/trinkettextv"
+                            android:layout_width="348dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="Trinkets"
+                            android:textColor="@android:color/background_light"
+                            tools:layout_editor_absoluteX="63dp"
+                            tools:layout_editor_absoluteY="113dp"
+                            tools:text="Trinkets" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/imageView13v"
+                        android:layout_width="wrap_content"
+                        android:layout_height="5dp"
+                        app:srcCompat="@drawable/spacing3" />
+
+                    <ImageView
+                        android:id="@+id/imageView10v"
+                        android:layout_width="wrap_content"
+                        android:layout_height="15dp"
+                        app:srcCompat="@drawable/spacing3" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/aquav"
+                        android:layout_width="match_parent"
+                        android:layout_height="41dp"
+                        android:background="@drawable/selectedblack"
+                        android:visibility="visible">
+
+
+                        <TextView
+                            android:id="@+id/aquatextv"
+                            android:layout_width="348dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="Aquatic"
+                            android:textColor="@android:color/background_light"
+                            tools:layout_editor_absoluteX="63dp"
+                            tools:layout_editor_absoluteY="113dp"
+                            tools:text="Aquatic" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/imageView11v"
+                        android:layout_width="wrap_content"
+                        android:layout_height="5dp"
+                        app:srcCompat="@drawable/spacing3" />
+
+
+                    <ImageView
+                        android:id="@+id/imageView100v"
+                        android:layout_width="wrap_content"
+                        android:layout_height="15dp"
+                        app:srcCompat="@drawable/spacing3" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/gatherv"
+                        android:layout_width="match_parent"
+                        android:layout_height="41dp"
+                        android:background="@drawable/selectedblack"
+                        android:visibility="visible">
+
+
+                        <TextView
+                            android:id="@+id/gathertextv"
+                            android:layout_width="348dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="Gathering"
+                            android:textColor="@android:color/background_light"
+                            tools:layout_editor_absoluteX="63dp"
+                            tools:layout_editor_absoluteY="113dp"
+                            tools:text="Gathering" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/imageView111v"
+                        android:layout_width="wrap_content"
+                        android:layout_height="5dp"
+                        app:srcCompat="@drawable/spacing3" />
+
+                    <ImageView
+                        android:id="@+id/imageView14v"
+                        android:layout_width="wrap_content"
+                        android:layout_height="15dp"
+                        app:srcCompat="@drawable/spacing3" />
+
+                </LinearLayout>
+            </ScrollView>
+
+
+        </LinearLayout>
+
         <LinearLayout
             android:id="@+id/horizontal"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="367dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="26dp"
             android:orientation="vertical"
             android:visibility="visible"
             tools:layout_editor_absoluteX="159dp"
@@ -530,6 +725,7 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/YourName"
                         tools:scrollbarAlwaysDrawHorizontalTrack="false">>
+
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
@@ -708,7 +904,7 @@
         </LinearLayout>
 
 
-    </LinearLayout>
+    </RelativeLayout>
 
 
     <HorizontalScrollView
