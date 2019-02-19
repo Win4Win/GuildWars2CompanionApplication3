@@ -7,21 +7,708 @@
     android:background="@drawable/background">
 
 
-    <ScrollView
-        android:id="@+id/tab2View"
-        android:layout_width="389dp"
-        android:layout_height="392dp"
+
+
+    <LinearLayout
+        android:id="@+id/gearlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/icons"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/hero_view_holder">
+        app:layout_constraintTop_toBottomOf="@+id/hero_view_holder"
+        app:layout_constraintVertical_bias="0.692">
+
+
+        <RelativeLayout
+            android:id="@+id/sorting"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:background="@drawable/grayblackcolor"
+            android:visibility="visible">
+
+
+            <Button
+                android:id="@+id/textView"
+                android:layout_width="201dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="11dp"
+                android:background="@android:color/transparent"
+                android:text="Layout: Horizontal"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@android:color/holo_orange_light"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/defaulticon"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toStartOf="@+id/altericon"
+                android:background="@drawable/defaultlayouticon1" />
+
+            <Button
+                android:id="@+id/altericon"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/alterlayouticon2" />
+        </RelativeLayout>
 
         <LinearLayout
+            android:id="@+id/horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" />
-    </ScrollView>
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="159dp"
+            tools:layout_editor_absoluteY="294dp">
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+                        android:id="@+id/weapon"
+                        android:layout_width="match_parent"
+                        android:layout_height="41dp"
+                        android:background="@drawable/selectedblack"
+                        android:visibility="visible">
+
+
+                        <TextView
+                            android:id="@+id/weapontext"
+                            android:layout_width="348dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="Weapons"
+                            android:textColor="@android:color/background_light"
+                            tools:layout_editor_absoluteX="63dp"
+                            tools:layout_editor_absoluteY="113dp"
+                            tools:text="Weapons" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="5dp"
+                        app:srcCompat="@drawable/spacing3" />
+
+                    <HorizontalScrollView
+                        android:id="@+id/weaponholder"
+                        android:layout_width="match_parent"
+                        android:layout_height="49dp"
+                        android:scrollbars="none"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/YourName"
+                        tools:scrollbarAlwaysDrawHorizontalTrack="false">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+
+                            <ImageView
+                                android:id="@+id/spacing1"
+                                android:layout_width="13dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/spacing2" />
+
+                            <Button
+                                android:id="@+id/weapon1"
+                                android:layout_width="49dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/testimage" />
+
+                            <ImageView
+                                android:id="@+id/spacing2"
+                                android:layout_width="13dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/spacing2" />
+
+                            <Button
+                                android:id="@+id/weapon2"
+                                android:layout_width="49dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/testimage" />
+
+                            <ImageView
+                                android:id="@+id/spacing3"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/spacing2" />
+
+                            <Button
+                                android:id="@+id/weapon3"
+                                android:layout_width="49dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/testimage" />
+
+                            <ImageView
+                                android:id="@+id/spacingw4"
+                                android:layout_width="13dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/spacing2" />
+
+                            <Button
+                                android:id="@+id/weapon4"
+                                android:layout_width="49dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/testimage" />
+
+                            <ImageView
+                                android:id="@+id/spacingw5"
+                                android:layout_width="13dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/spacing2" />
+
+
+                        </LinearLayout>
+
+
+                    </HorizontalScrollView>
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="15dp"
+                        app:srcCompat="@drawable/spacing3" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/armor"
+                        android:layout_width="match_parent"
+                        android:layout_height="41dp"
+                        android:background="@drawable/selectedblack"
+                        android:visibility="visible">
+
+
+                        <TextView
+                            android:id="@+id/armortext"
+                            android:layout_width="348dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="Armor"
+                            android:textColor="@android:color/background_light"
+                            tools:layout_editor_absoluteX="63dp"
+                            tools:layout_editor_absoluteY="113dp"
+                            tools:text="Armor" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/belowarmorspcae"
+                        android:layout_width="wrap_content"
+                        android:layout_height="5dp"
+                        app:srcCompat="@drawable/spacing3" />
+
+                    <HorizontalScrollView
+                        android:id="@+id/armorholder"
+                        android:layout_width="match_parent"
+                        android:layout_height="49dp"
+                        android:scrollbars="none"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/YourName"
+                        tools:scrollbarAlwaysDrawHorizontalTrack="false">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+
+                            <ImageView
+                                android:id="@+id/spacingw11"
+                                android:layout_width="13dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/spacing2" />
+
+                            <Button
+                                android:id="@+id/armor1"
+                                android:layout_width="49dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/testimage" />
+
+                            <ImageView
+                                android:id="@+id/spacingw12"
+                                android:layout_width="13dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/spacing2" />
+
+                            <Button
+                                android:id="@+id/armor2"
+                                android:layout_width="49dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/testimage" />
+
+                            <ImageView
+                                android:id="@+id/spacingw13"
+                                android:layout_width="13dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/spacing2" />
+
+                            <Button
+                                android:id="@+id/armor3"
+                                android:layout_width="49dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/testimage" />
+
+                            <ImageView
+                                android:id="@+id/spacingw14"
+                                android:layout_width="13dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/spacing2" />
+
+                            <Button
+                                android:id="@+id/armor4"
+                                android:layout_width="49dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/testimage" />
+
+                            <ImageView
+                                android:id="@+id/spacingw15"
+                                android:layout_width="13dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/spacing2" />
+
+
+                            <Button
+                                android:id="@+id/armor5"
+                                android:layout_width="49dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/testimage" />
+
+                            <ImageView
+                                android:id="@+id/spacingw16"
+                                android:layout_width="13dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/spacing2" />
+
+
+                            <Button
+                                android:id="@+id/armor6"
+                                android:layout_width="49dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/testimage" />
+
+                            <ImageView
+                                android:id="@+id/spacingw17"
+                                android:layout_width="13dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/spacing2" />
+
+                        </LinearLayout>
+
+
+                    </HorizontalScrollView>
+
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="15dp"
+                        app:srcCompat="@drawable/spacing3" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/trinket"
+                        android:layout_width="match_parent"
+                        android:layout_height="41dp"
+                        android:background="@drawable/selectedblack"
+                        android:visibility="visible">
+
+
+                        <TextView
+                            android:id="@+id/trinkettext"
+                            android:layout_width="348dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="Trinkets"
+                            android:textColor="@android:color/background_light"
+                            tools:layout_editor_absoluteX="63dp"
+                            tools:layout_editor_absoluteY="113dp"
+                            tools:text="Trinkets" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/imageView13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="5dp"
+                        app:srcCompat="@drawable/spacing3" />
+
+                    <HorizontalScrollView
+                        android:id="@+id/trinkeyholder"
+                        android:layout_width="match_parent"
+                        android:layout_height="49dp"
+                        android:scrollbars="none"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/YourName"
+                        tools:scrollbarAlwaysDrawHorizontalTrack="false">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+
+                            <ImageView
+                                android:id="@+id/spacingw21"
+                                android:layout_width="13dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/spacing2" />
+
+                            <Button
+                                android:id="@+id/trinket1"
+                                android:layout_width="49dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/testimage" />
+
+                            <ImageView
+                                android:id="@+id/spacingw22"
+                                android:layout_width="13dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/spacing2" />
+
+                            <Button
+                                android:id="@+id/trinket2"
+                                android:layout_width="49dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/testimage" />
+
+                            <ImageView
+                                android:id="@+id/spacingw23"
+                                android:layout_width="13dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/spacing2" />
+
+                            <Button
+                                android:id="@+id/trinket3"
+                                android:layout_width="49dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/testimage" />
+
+                            <ImageView
+                                android:id="@+id/spacingw24"
+                                android:layout_width="13dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/spacing2" />
+
+                            <Button
+                                android:id="@+id/trinket4"
+                                android:layout_width="49dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/testimage" />
+
+                            <ImageView
+                                android:id="@+id/spacingw25"
+                                android:layout_width="13dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/spacing2" />
+
+
+                            <Button
+                                android:id="@+id/trinket5"
+                                android:layout_width="49dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/testimage" />
+
+                            <ImageView
+                                android:id="@+id/spacingw26"
+                                android:layout_width="13dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/spacing2" />
+
+
+                            <Button
+                                android:id="@+id/trinket6"
+                                android:layout_width="49dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/testimage" />
+
+                            <ImageView
+                                android:id="@+id/spacingw27"
+                                android:layout_width="13dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/spacing2" />
+
+                        </LinearLayout>
+
+
+                    </HorizontalScrollView>
+
+                    <ImageView
+                        android:id="@+id/imageView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="15dp"
+                        app:srcCompat="@drawable/spacing3" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/aqua"
+                        android:layout_width="match_parent"
+                        android:layout_height="41dp"
+                        android:background="@drawable/selectedblack"
+                        android:visibility="visible">
+
+
+                        <TextView
+                            android:id="@+id/aquatext"
+                            android:layout_width="348dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="Aquatic"
+                            android:textColor="@android:color/background_light"
+                            tools:layout_editor_absoluteX="63dp"
+                            tools:layout_editor_absoluteY="113dp"
+                            tools:text="Aquatic" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/imageView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="5dp"
+                        app:srcCompat="@drawable/spacing3" />
+
+                    <HorizontalScrollView
+                        android:id="@+id/aquaholder"
+                        android:layout_width="match_parent"
+                        android:layout_height="49dp"
+                        android:scrollbars="none"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/YourName"
+                        tools:scrollbarAlwaysDrawHorizontalTrack="false">>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+
+                            <ImageView
+                                android:id="@+id/spacingw31"
+                                android:layout_width="13dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/spacing2" />
+
+                            <Button
+                                android:id="@+id/aqua1"
+                                android:layout_width="49dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/testimage" />
+
+                            <ImageView
+                                android:id="@+id/spacingw32"
+                                android:layout_width="13dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/spacing2" />
+
+                            <Button
+                                android:id="@+id/aqua2"
+                                android:layout_width="49dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/testimage" />
+
+                            <ImageView
+                                android:id="@+id/spacingw33"
+                                android:layout_width="13dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/spacing2" />
+
+                            <Button
+                                android:id="@+id/aqua3"
+                                android:layout_width="49dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/testimage" />
+
+                            <ImageView
+                                android:id="@+id/spacingw34"
+                                android:layout_width="13dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/spacing2" />
+
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+
+                    <ImageView
+                        android:id="@+id/imageView100"
+                        android:layout_width="wrap_content"
+                        android:layout_height="15dp"
+                        app:srcCompat="@drawable/spacing3" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/gather"
+                        android:layout_width="match_parent"
+                        android:layout_height="41dp"
+                        android:background="@drawable/selectedblack"
+                        android:visibility="visible">
+
+
+                        <TextView
+                            android:id="@+id/gathertext"
+                            android:layout_width="348dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="Gathering"
+                            android:textColor="@android:color/background_light"
+                            tools:layout_editor_absoluteX="63dp"
+                            tools:layout_editor_absoluteY="113dp"
+                            tools:text="Gathering" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/imageView111"
+                        android:layout_width="wrap_content"
+                        android:layout_height="5dp"
+                        app:srcCompat="@drawable/spacing3" />
+
+                    <HorizontalScrollView
+                        android:id="@+id/gatherholder"
+                        android:layout_width="match_parent"
+                        android:layout_height="49dp"
+                        android:scrollbars="none"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/YourName"
+                        tools:scrollbarAlwaysDrawHorizontalTrack="false">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+
+                            <ImageView
+                                android:id="@+id/spacingw41"
+                                android:layout_width="13dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/spacing2" />
+
+                            <Button
+                                android:id="@+id/gather1"
+                                android:layout_width="49dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/testimage" />
+
+                            <ImageView
+                                android:id="@+id/spacingw42"
+                                android:layout_width="13dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/spacing2" />
+
+                            <Button
+                                android:id="@+id/gather2"
+                                android:layout_width="49dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/testimage" />
+
+                            <ImageView
+                                android:id="@+id/spacingw43"
+                                android:layout_width="13dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/spacing2" />
+
+                            <Button
+                                android:id="@+id/gather3"
+                                android:layout_width="49dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/testimage" />
+
+                            <ImageView
+                                android:id="@+id/spacingw44"
+                                android:layout_width="13dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/spacing2" />
+
+
+                        </LinearLayout>
+
+
+                    </HorizontalScrollView>
+
+                    <ImageView
+                        android:id="@+id/imageView14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="15dp"
+                        app:srcCompat="@drawable/spacing3" />
+
+                </LinearLayout>
+            </ScrollView>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
 
 
     <HorizontalScrollView
@@ -29,7 +716,6 @@
         android:layout_width="0dp"
         android:layout_height="60dp"
         android:scrollbars="none"
-        app:layout_constraintBottom_toTopOf="@+id/tab2View"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,7 +732,7 @@
                 android:id="@+id/gear"
                 android:layout_width="130dp"
                 android:layout_height="match_parent"
-                android:background="@drawable/selected2"
+                android:background="@drawable/selectedheropanel"
                 android:text="GEAR"
                 android:textColor="@android:color/background_light" />
 
@@ -54,7 +740,7 @@
                 android:id="@+id/traits"
                 android:layout_width="130dp"
                 android:layout_height="match_parent"
-                android:background="@drawable/lighterbackground"
+                android:background="@drawable/grayblackcolor"
                 android:text="TRAITS"
                 android:textColor="@android:color/darker_gray" />
 
@@ -63,7 +749,7 @@
                 android:id="@+id/general"
                 android:layout_width="130dp"
                 android:layout_height="match_parent"
-                android:background="@drawable/lighterbackground"
+                android:background="@drawable/grayblackcolor"
                 android:text="GENERAL"
                 android:textColor="@android:color/darker_gray" />
 
@@ -71,7 +757,7 @@
                 android:id="@+id/inventory"
                 android:layout_width="130dp"
                 android:layout_height="match_parent"
-                android:background="@drawable/lighterbackground"
+                android:background="@drawable/grayblackcolor"
                 android:text="INVENTORY"
                 android:textColor="@android:color/darker_gray" />
 
@@ -79,7 +765,7 @@
                 android:id="@+id/tempholder3"
                 android:layout_width="130dp"
                 android:layout_height="match_parent"
-                android:background="@drawable/lighterbackground"
+                android:background="@drawable/grayblackcolor"
                 android:nestedScrollingEnabled="false"
                 android:text="TEMP"
                 android:textColor="@android:color/darker_gray" />
@@ -93,6 +779,7 @@
         android:id="@+id/YourName"
         android:layout_width="0dp"
         android:layout_height="42dp"
+        android:background="@drawable/lighterbackground"
         android:gravity="center"
         android:text="YOUR_NAME"
         android:textAlignment="center"
@@ -112,8 +799,7 @@
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tab2View">
+        app:layout_constraintStart_toStartOf="parent">
 
         <Button
             android:id="@+id/companion1"

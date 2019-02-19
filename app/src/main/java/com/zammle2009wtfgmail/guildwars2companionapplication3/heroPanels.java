@@ -34,11 +34,11 @@ public class heroPanels extends AppCompatActivity {
         gear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                gear.setBackgroundResource(R.drawable.selected2);
-                traits.setBackgroundResource(R.drawable.lighterbackground);
-                general.setBackgroundResource(R.drawable.lighterbackground);
-                inventory.setBackgroundResource(R.drawable.lighterbackground);
-                temp2.setBackgroundResource(R.drawable.lighterbackground);
+                gear.setBackgroundResource(R.drawable.selectedheropanel);
+                traits.setBackgroundResource(R.drawable.grayblackcolor);
+                general.setBackgroundResource(R.drawable.grayblackcolor);
+                inventory.setBackgroundResource(R.drawable.grayblackcolor);
+                temp2.setBackgroundResource(R.drawable.grayblackcolor);
 
 
                 gear.setTextColor(Color.parseColor("#FFFFFF"));
@@ -54,11 +54,11 @@ public class heroPanels extends AppCompatActivity {
         traits.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                gear.setBackgroundResource(R.drawable.lighterbackground);
-                traits.setBackgroundResource(R.drawable.selected2);
-                general.setBackgroundResource(R.drawable.lighterbackground);
-                inventory.setBackgroundResource(R.drawable.lighterbackground);
-                temp2.setBackgroundResource(R.drawable.lighterbackground);
+                gear.setBackgroundResource(R.drawable.grayblackcolor);
+                traits.setBackgroundResource(R.drawable.selectedheropanel);
+                general.setBackgroundResource(R.drawable.grayblackcolor);
+                inventory.setBackgroundResource(R.drawable.grayblackcolor);
+                temp2.setBackgroundResource(R.drawable.grayblackcolor);
 
                 gear.setTextColor(Color.parseColor("#A0A0A0"));
                 traits.setTextColor(Color.parseColor("#FFFFFF"));
@@ -73,11 +73,11 @@ public class heroPanels extends AppCompatActivity {
         general.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                gear.setBackgroundResource(R.drawable.lighterbackground);
-                traits.setBackgroundResource(R.drawable.lighterbackground);
-                general.setBackgroundResource(R.drawable.selected2);
-                inventory.setBackgroundResource(R.drawable.lighterbackground);
-                temp2.setBackgroundResource(R.drawable.lighterbackground);
+                gear.setBackgroundResource(R.drawable.grayblackcolor);
+                traits.setBackgroundResource(R.drawable.grayblackcolor);
+                general.setBackgroundResource(R.drawable.selectedheropanel);
+                inventory.setBackgroundResource(R.drawable.grayblackcolor);
+                temp2.setBackgroundResource(R.drawable.grayblackcolor);
 
                 gear.setTextColor(Color.parseColor("#A0A0A0"));
                 traits.setTextColor(Color.parseColor("#A0A0A0"));
@@ -93,11 +93,11 @@ public class heroPanels extends AppCompatActivity {
         inventory.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                gear.setBackgroundResource(R.drawable.lighterbackground);
-                traits.setBackgroundResource(R.drawable.lighterbackground);
-                general.setBackgroundResource(R.drawable.lighterbackground);
-                inventory.setBackgroundResource(R.drawable.selected2);
-                temp2.setBackgroundResource(R.drawable.lighterbackground);
+                gear.setBackgroundResource(R.drawable.grayblackcolor);
+                traits.setBackgroundResource(R.drawable.grayblackcolor);
+                general.setBackgroundResource(R.drawable.grayblackcolor);
+                inventory.setBackgroundResource(R.drawable.selectedheropanel);
+                temp2.setBackgroundResource(R.drawable.grayblackcolor);
 
                 gear.setTextColor(Color.parseColor("#A0A0A0"));
                 traits.setTextColor(Color.parseColor("#A0A0A0"));
@@ -112,11 +112,11 @@ public class heroPanels extends AppCompatActivity {
         temp2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                gear.setBackgroundResource(R.drawable.lighterbackground);
-                traits.setBackgroundResource(R.drawable.lighterbackground);
-                general.setBackgroundResource(R.drawable.lighterbackground);
-                inventory.setBackgroundResource(R.drawable.lighterbackground);
-                temp2.setBackgroundResource(R.drawable.selected2);
+                gear.setBackgroundResource(R.drawable.grayblackcolor);
+                traits.setBackgroundResource(R.drawable.grayblackcolor);
+                general.setBackgroundResource(R.drawable.grayblackcolor);
+                inventory.setBackgroundResource(R.drawable.grayblackcolor);
+                temp2.setBackgroundResource(R.drawable.selectedheropanel);
 
 
                 gear.setTextColor(Color.parseColor("#A0A0A0"));
