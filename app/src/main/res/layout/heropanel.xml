@@ -67,7 +67,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginTop="23dp"
             android:orientation="vertical"
-            android:visibility="invisible"
+            android:visibility="visible"
             tools:layout_editor_absoluteX="159dp"
             tools:layout_editor_absoluteY="294dp">
 
@@ -108,12 +108,13 @@
                         app:srcCompat="@drawable/spacing3" />
 
 
-                    <ImageView
-                        android:id="@+id/imageView8v"
-                        android:layout_width="wrap_content"
-                        android:layout_height="15dp"
-                        app:srcCompat="@drawable/spacing3" />
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/weaponrecycle"
+                        android:layout_width="match_parent"
+                        android:layout_height="236dp">
 
+
+                    </android.support.v7.widget.RecyclerView>
 
                     <RelativeLayout
                         android:id="@+id/armorv"
@@ -141,12 +142,13 @@
                         android:layout_height="5dp"
                         app:srcCompat="@drawable/spacing3" />
 
-                    <ImageView
-                        android:id="@+id/imageView9v"
-                        android:layout_width="wrap_content"
-                        android:layout_height="15dp"
-                        app:srcCompat="@drawable/spacing3" />
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/armorrecycle"
+                        android:layout_width="match_parent"
+                        android:layout_height="354dp">
 
+
+                    </android.support.v7.widget.RecyclerView>
 
                     <RelativeLayout
                         android:id="@+id/trinketv"
@@ -174,11 +176,13 @@
                         android:layout_height="5dp"
                         app:srcCompat="@drawable/spacing3" />
 
-                    <ImageView
-                        android:id="@+id/imageView10v"
-                        android:layout_width="wrap_content"
-                        android:layout_height="15dp"
-                        app:srcCompat="@drawable/spacing3" />
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/trinketrecycle"
+                        android:layout_width="match_parent"
+                        android:layout_height="354dp">
+
+
+                    </android.support.v7.widget.RecyclerView>
 
 
                     <RelativeLayout
@@ -208,11 +212,13 @@
                         app:srcCompat="@drawable/spacing3" />
 
 
-                    <ImageView
-                        android:id="@+id/imageView100v"
-                        android:layout_width="wrap_content"
-                        android:layout_height="15dp"
-                        app:srcCompat="@drawable/spacing3" />
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/aquarecycle"
+                        android:layout_width="match_parent"
+                        android:layout_height="177dp">
+
+
+                    </android.support.v7.widget.RecyclerView>
 
 
                     <RelativeLayout
@@ -241,11 +247,13 @@
                         android:layout_height="5dp"
                         app:srcCompat="@drawable/spacing3" />
 
-                    <ImageView
-                        android:id="@+id/imageView14v"
-                        android:layout_width="wrap_content"
-                        android:layout_height="15dp"
-                        app:srcCompat="@drawable/spacing3" />
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/gatherrecycle"
+                        android:layout_width="match_parent"
+                        android:layout_height="177dp">
+
+
+                    </android.support.v7.widget.RecyclerView>
 
                 </LinearLayout>
             </ScrollView>
@@ -260,7 +268,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginTop="26dp"
             android:orientation="vertical"
-            android:visibility="visible"
+            android:visibility="invisible"
             tools:layout_editor_absoluteX="159dp"
             tools:layout_editor_absoluteY="294dp">
 
