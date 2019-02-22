@@ -28,7 +28,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginTop="5dp"
 
-        android:background="@drawable/testimage" />
+        app:srcCompat="@drawable/trans2" />
 
     <ImageView
         android:id="@+id/topspace"

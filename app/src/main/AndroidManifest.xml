@@ -15,7 +15,9 @@
         <activity android:name=".heroPanels"/>
         <activity android:name=".testPage"/>
         <activity android:name=".worldVsWorld"/>
-        <activity android:name=".testPage2"/>
+
+
+            <activity android:name=".testPage2"/>
         <activity android:name=".MainActivity">
 
 

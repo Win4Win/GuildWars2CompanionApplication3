@@ -28,7 +28,10 @@ import java.io.InputStream;
         return mIcon11;
     }
 
-    protected void onPostExecute(Bitmap result) {
+    protected void onPostExecute(Bitmap result)
+    {
+
         bmImage.setImageBitmap(result);
+
     }
 }
