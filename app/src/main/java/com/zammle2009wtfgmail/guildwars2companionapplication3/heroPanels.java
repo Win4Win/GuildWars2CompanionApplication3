@@ -297,36 +297,48 @@ public class heroPanels extends AppCompatActivity {
         mWeapon.setAdapter(mWeaponAdapter);
 
 
-       final ImageView imageView = new ImageView(getApplicationContext());
 
-       imageView.setImageDrawable(getResources().getDrawable(R.drawable.red));
-
-           //     .load("https://render.guildwars2.com/file/D5A5A4083E97C4EF0226315226E610C01DEE2248/1423739.png")
-
-                        Drawable draw = imageView.getDrawable();
-                       Holder.get(0).setItemIcon(draw);
+        ////////////////////////////////////////////////////////////////////////
+        /////////////// start of for loop /////////////////////////////////////
+        ////////////// flooding with info /////////////////////////////////////
+        //////////////////////////////////////////////////////////////////////
 
 
+        for (int i = 0; i < Holder.size(); ++i) {
 
-        Picasso.with(this)
-                .load("https://render.guildwars2.com/file/D5A5A4083E97C4EF0226315226E610C01DEE2248/1423739.png")
-                .into(imageView, new com.squareup.picasso.Callback() {
-                    @Override
-                    public void onSuccess() {
-                        Drawable draw = imageView.getDrawable();
-                        Holder.get(0).setItemIcon(draw);
-                        mWeaponAdapter.notifyItemChanged(0);
+            final ImageView imageView = new ImageView(getApplicationContext());
 
-                    }
+            imageView.setImageDrawable(getResources().getDrawable(R.drawable.red));
 
-                    @Override
-                    public void onError() {
-                        Holder.get(0).setItemIcon(getResources().getDrawable(R.drawable.xerror));
-                        mWeaponAdapter.notifyItemChanged(0);
-                    }
-                });
+            //     .load("https://render.guildwars2.com/file/D5A5A4083E97C4EF0226315226E610C01DEE2248/1423739.png")
+
+            Drawable draw = imageView.getDrawable();
+            Holder.get(i).setItemIcon(draw);
+
+            final int pos = i;
+
+            Picasso.with(this)
+                    .load("https://render.guildwars2.com/file/D5A5A4083E97C4EF0226315226E610C01DEE2248/1423739.png")
+                    .into(imageView, new com.squareup.picasso.Callback() {
+                        @Override
+                        public void onSuccess() {
+                            Drawable draw = imageView.getDrawable();
+                            Holder.get(pos).setItemIcon(draw);
+                            mWeaponAdapter.notifyItemChanged(pos);
 
 
+
+
+                        }
+
+                        @Override
+                        public void onError() {
+                            Holder.get(pos).setItemIcon(getResources().getDrawable(R.drawable.xerror));
+                            mWeaponAdapter.notifyItemChanged(pos);
+                        }
+                    });
+
+        }
     }
 }
 

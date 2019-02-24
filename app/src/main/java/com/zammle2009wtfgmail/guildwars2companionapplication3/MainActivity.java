@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
     static String[] wvwRank_= new String[2];
 
 
+
     static int selectedLayout;
 
 
