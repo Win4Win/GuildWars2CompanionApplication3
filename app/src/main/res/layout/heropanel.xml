@@ -29,7 +29,7 @@
 
 
             <Button
-                android:id="@+id/textView"
+                android:id="@+id/textGearLayout"
                 android:layout_width="201dp"
                 android:layout_height="match_parent"
                 android:layout_alignParentStart="true"
@@ -40,7 +40,8 @@
                 android:textAlignment="viewStart"
                 android:textAllCaps="false"
                 android:textColor="@android:color/holo_orange_light"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                tools:text="Layout: Horizontal" />
 
             <Button
                 android:id="@+id/defaulticon"
@@ -67,7 +68,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginTop="23dp"
             android:orientation="vertical"
-            android:visibility="visible"
+            android:visibility="invisible"
             tools:layout_editor_absoluteX="159dp"
             tools:layout_editor_absoluteY="294dp">
 
@@ -268,7 +269,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginTop="26dp"
             android:orientation="vertical"
-            android:visibility="invisible"
+            android:visibility="visible"
             tools:layout_editor_absoluteX="159dp"
             tools:layout_editor_absoluteY="294dp">
 

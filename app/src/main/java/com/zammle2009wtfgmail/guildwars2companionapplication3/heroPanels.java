@@ -17,6 +17,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
@@ -79,6 +80,41 @@ public class heroPanels extends AppCompatActivity {
         final Button inventory = (Button) findViewById(R.id.inventory);
         final Button temp2 = (Button) findViewById(R.id.tempholder3);
 
+        final Button alterView = (Button) findViewById(R.id.altericon);
+        final Button defaultView = (Button) findViewById(R.id.defaulticon);
+        final TextView layoutGear = (Button) findViewById(R.id.textGearLayout);
+        final LinearLayout horizontalGear = (LinearLayout) findViewById(R.id.horizontal);
+        final LinearLayout verticalGear = (LinearLayout) findViewById(R.id.vertical);
+
+        alterView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+
+                horizontalGear.setVisibility(View.INVISIBLE);
+                verticalGear.setVisibility(View.VISIBLE);
+                layoutGear.setText("Layout: Vertical");
+                defaultView.setBackgroundResource(R.drawable.defaultlayouticon2);
+                alterView.setBackgroundResource(R.drawable.alterlayouticon1);
+            }
+
+
+        });
+
+        defaultView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+
+                horizontalGear.setVisibility(View.VISIBLE);
+                verticalGear.setVisibility(View.INVISIBLE);
+                layoutGear.setText("Layout: Horizontal");
+                defaultView.setBackgroundResource(R.drawable.defaultlayouticon1);
+                alterView.setBackgroundResource(R.drawable.alterlayouticon2);
+            }
+
+
+        });
 
         gear.setOnClickListener(new View.OnClickListener() {
             @Override
