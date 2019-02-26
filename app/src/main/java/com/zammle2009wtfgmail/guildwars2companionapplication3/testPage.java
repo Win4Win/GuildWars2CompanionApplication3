@@ -19,6 +19,10 @@ import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -33,7 +37,14 @@ public class testPage extends AppCompatActivity {
 
 
     static String urls2="";
+    static String urls3="";
 
+    static int selectedCharacter = 0;
+
+    JSONArray characters;
+    JSONObject characterInfo;
+    static ArrayList <String> names = new ArrayList <>();
+    static characterInfo currentCharacter = new characterInfo();
 
 
 
@@ -49,28 +60,187 @@ Drawable test;
 
 
 
-        im = (ImageView) findViewById(R.id.testview);
-        test = getResources().getDrawable(R.drawable.testinfusion);
-        ImageView image = new ImageView(getApplicationContext());
 
 
-        String img_url = "https://render.guildwars2.com/file/D5A5A4083E97C4EF0226315226E610C01DEE2248/1423739.png";
-        if (!img_url.equalsIgnoreCase(""))
-            Picasso.with(getApplicationContext()).load(img_url).placeholder(R.drawable.oload)// Place holder image from drawable folder
-                    .error(R.drawable.xerror).resize(110, 110).centerCrop()
-                    .into(image);
+        final TextView testView = (TextView) findViewById(R.id.testView);
 
 
-        test = image.getDrawable();
-        im.setImageDrawable(test);
-        /**
-        new DownloadImageTask(im)
-                .execute("https://render.guildwars2.com/file/D5A5A4083E97C4EF0226315226E610C01DEE2248/1423739.png");
-         **/
+
+        /////////////////////////////////////////////////////////////
+        //////////// character names ////////////////////////////////
+        /////////////////////////////////////////////////////////////
+
+
+
+                new Thread(new Runnable(){
+
+                    public void run(){
+
+
+
+                        //TextView t; //to show the result, please declare and find it inside onCreate()
+
+
+
+
+                        try {
+                            // Create a URL for the desired page
+
+                            String linkAPI =ApiResources.charactersAPI + ApiResources.token + ApiResources.accountAPI;
+
+                            URL url = new URL(linkAPI); //My text file location
+                            //First open the connection
+                            HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+                            conn.setConnectTimeout(60000); // timing out in a minute
+
+                            BufferedReader in = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+
+                            //t=(TextView)findViewById(R.id.TextView1); // ideally do this in onCreate()
+
+
+                            urls2 = "";
+
+                            String str;
+                            while ((str = in.readLine()) != null) {
+                                urls2 = urls2 + str;
+                            }
+
+                            characters = new JSONArray(urls2);
+
+                            in.close();
+                        } catch (Exception e) {
+                            Log.d("MyTag", e.toString());
+                        }
+
+
+                        //since we are in background thread, to post results we have to go back to ui thread. do the following for that
+
+                        testPage.this.runOnUiThread(new Runnable(){
+                            public void run()
+                            {
+
+
+
+                                for (int i = 0; i < characters.length(); ++i) {
+                                    try {
+                                        names.add(characters.get(i).toString());
+                                    } catch (JSONException e) {
+                                        e.printStackTrace();
+                                    }
+
+                                }
+
+
+
+
+
+
+                                // part 2
+
+
+                                ////////////////////////////////////////////////////
+                                ///////////// selected character info //////////////
+                                ////////////////////////////////////////////////////
+
+
+
+
+                                new Thread(new Runnable(){
+
+                                    public void run(){
+
+
+
+                                        //TextView t; //to show the result, please declare and find it inside onCreate()
+
+
+
+
+                                        try {
+                                            // Create a URL for the desired page
+
+                                            String delimterName = names.get(selectedCharacter).replace(" ", "%20");;
+
+                                            String linkAPI = ApiResources.charactersAPI + delimterName + ApiResources.token + ApiResources.accountAPI;
+
+                                            URL url = new URL(linkAPI); //My text file location
+                                            //First open the connection
+                                            HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+                                            conn.setConnectTimeout(60000); // timing out in a minute
+
+                                            BufferedReader in = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+
+                                            //t=(TextView)findViewById(R.id.TextView1); // ideally do this in onCreate()
+
+
+                                            urls3 = "";
+
+                                            String str;
+                                            while ((str = in.readLine()) != null) {
+                                                urls3 = urls3 + str;
+                                            }
+
+                                            characterInfo = new JSONObject(urls3);
+
+                                            in.close();
+                                        } catch (Exception e) {
+                                            Log.d("MyTag", e.toString());
+                                        }
+
+
+                                        //since we are in background thread, to post results we have to go back to ui thread. do the following for that
+
+                                        testPage.this.runOnUiThread(new Runnable(){
+                                            public void run()
+                                            {
+
+
+
+
+
+
+                                            }
+
+
+
+
+                                        });
+
+
+
+                                    }
+
+
+                                }).start();
+
+                                // end of part 2
+
+
+
+
+                            }
+
+
+
+
+                        });
+
+
+
+                    }
+
+
+                }).start();
+
+
+
+
+
+
+
+
 
 
 
     }
-
-
 }

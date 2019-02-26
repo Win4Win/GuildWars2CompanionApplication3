@@ -80,5 +80,21 @@
         android:layout_toStartOf="@+id/infusion2"
         android:background="@drawable/testinfusion" />
 
+    <Button
+        android:id="@+id/upgrade1"
+        android:layout_width="31dp"
+        android:layout_height="31dp"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/upgrade2"
+        android:background="@drawable/testupgrade" />
+
+    <Button
+        android:id="@+id/upgrade2"
+        android:layout_width="31dp"
+        android:layout_height="31dp"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/infusion3"
+        android:background="@drawable/testupgrade" />
+
 
 </RelativeLayout>
