@@ -38,34 +38,39 @@ public class characterInfo
 
 
 
-    private class Crafting
-    {
-        public String discipline = "";
-        public String rating = "";
-        public String active = "";
-
-    }
-
-    private class Specialization
-    {
-
-        public Traits pve_ = new Traits();
-        public Traits pvp_ = new Traits();
-        public Traits wvw_ = new Traits();
 
 
 
 
 
-        private class Traits
-        {
-            public String id_ = "";
-            public String[] traits_ = new String[3];
-        }
-    }
+
+}
+
+class Crafting
+{
+    public String discipline = "";
+    public String rating = "";
+    public String active = "";
+
+}
+
+class Specialization
+{
+
+    public ArrayList<Traits> pve_ = new ArrayList <>();
+    public ArrayList<Traits> pvp_ = new ArrayList <>();
+    public ArrayList<Traits> wvw_ = new ArrayList <>();
 
 
 
 
 
+
+
+}
+
+class Traits
+{
+    public String id_ = "";
+    public String[] traits_ = new String[3];
 }
