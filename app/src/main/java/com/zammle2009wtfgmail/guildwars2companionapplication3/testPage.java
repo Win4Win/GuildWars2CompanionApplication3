@@ -46,7 +46,12 @@ public class testPage extends AppCompatActivity {
     static ArrayList <String> names = new ArrayList <>();
     static characterInfo currentCharacter = new characterInfo();
 
-
+    static TextView testView;
+    static ImageView ItemIcon;
+    static ImageView infusion1_;
+    static ImageView infusion2_;
+    static ImageView upgrade1_;
+    static ImageView upgrade2_;
 
 ImageView im;
 
@@ -62,8 +67,12 @@ Drawable test;
 
 
 
-        final TextView testView = (TextView) findViewById(R.id.testView);
-
+       testView = (TextView) findViewById(R.id.testView);
+        ItemIcon = (ImageView) findViewById(R.id.theicon);
+        infusion1_=(ImageView) findViewById(R.id.infusion1);
+        infusion2_ = (ImageView) findViewById(R.id.infusion2);
+        upgrade1_ = (ImageView) findViewById(R.id.upgrade1);
+        upgrade2_ = (ImageView) findViewById(R.id.upgrade2);
 
 
         /////////////////////////////////////////////////////////////
@@ -509,10 +518,33 @@ Drawable test;
                 public void run()
                 {
 
+                    testPage.testView.setText(currentCharacter.equipment.get(0).id_);
+                    try {
+                        currentCharacter.name_ ="" + Linker.get("name");
+
+                        String itemPNG = "" + Linker.get("icon");
+
+                        Picasso.with(testPage.this)
+                                .load(itemPNG)
+                                .into(ItemIcon, new com.squareup.picasso.Callback() {
+                                    @Override
+                                    public void onSuccess() {
 
 
 
 
+                                    }
+
+                                    @Override
+                                    public void onError() {
+                                        ItemIcon.setImageDrawable(getResources().getDrawable(R.drawable.xerror));
+
+                                    }
+                                });
+
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
 
 
                 }

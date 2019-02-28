@@ -18,6 +18,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
@@ -52,6 +53,8 @@ public class heroPanels extends AppCompatActivity {
     private RecyclerView.LayoutManager aquaLayout;
     private RecyclerView.LayoutManager gatherLayout;
 
+    private RelativeLayout gearlayout;
+
     private Handler handler = new Handler();
 
 
@@ -85,6 +88,8 @@ public class heroPanels extends AppCompatActivity {
         final TextView layoutGear = (Button) findViewById(R.id.textGearLayout);
         final LinearLayout horizontalGear = (LinearLayout) findViewById(R.id.horizontal);
         final LinearLayout verticalGear = (LinearLayout) findViewById(R.id.vertical);
+
+        gearlayout = (RelativeLayout) findViewById(R.id.gearlayout);
 
         alterView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -125,6 +130,8 @@ public class heroPanels extends AppCompatActivity {
                 inventory.setBackgroundResource(R.drawable.grayblackcolor);
                 temp2.setBackgroundResource(R.drawable.grayblackcolor);
 
+                gearlayout.setVisibility(View.VISIBLE);
+
 
                 gear.setTextColor(Color.parseColor("#FFFFFF"));
                 traits.setTextColor(Color.parseColor("#A0A0A0"));
@@ -145,6 +152,8 @@ public class heroPanels extends AppCompatActivity {
                 inventory.setBackgroundResource(R.drawable.grayblackcolor);
                 temp2.setBackgroundResource(R.drawable.grayblackcolor);
 
+                gearlayout.setVisibility(View.INVISIBLE);
+
                 gear.setTextColor(Color.parseColor("#A0A0A0"));
                 traits.setTextColor(Color.parseColor("#FFFFFF"));
                 general.setTextColor(Color.parseColor("#A0A0A0"));
@@ -163,6 +172,8 @@ public class heroPanels extends AppCompatActivity {
                 general.setBackgroundResource(R.drawable.selectedheropanel);
                 inventory.setBackgroundResource(R.drawable.grayblackcolor);
                 temp2.setBackgroundResource(R.drawable.grayblackcolor);
+
+                gearlayout.setVisibility(View.INVISIBLE);
 
                 gear.setTextColor(Color.parseColor("#A0A0A0"));
                 traits.setTextColor(Color.parseColor("#A0A0A0"));
@@ -184,6 +195,8 @@ public class heroPanels extends AppCompatActivity {
                 inventory.setBackgroundResource(R.drawable.selectedheropanel);
                 temp2.setBackgroundResource(R.drawable.grayblackcolor);
 
+                gearlayout.setVisibility(View.INVISIBLE);
+
                 gear.setTextColor(Color.parseColor("#A0A0A0"));
                 traits.setTextColor(Color.parseColor("#A0A0A0"));
                 general.setTextColor(Color.parseColor("#A0A0A0"));
@@ -203,6 +216,7 @@ public class heroPanels extends AppCompatActivity {
                 inventory.setBackgroundResource(R.drawable.grayblackcolor);
                 temp2.setBackgroundResource(R.drawable.selectedheropanel);
 
+                gearlayout.setVisibility(View.INVISIBLE);
 
                 gear.setTextColor(Color.parseColor("#A0A0A0"));
                 traits.setTextColor(Color.parseColor("#A0A0A0"));
