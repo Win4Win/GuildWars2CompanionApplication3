@@ -41,15 +41,15 @@ public class fetchData extends AsyncTask<Void, Void, Void>  {
 
             BufferedReader in = new BufferedReader(new InputStreamReader(conn.getInputStream()));
 
-            testPage.urls2 = "";
+            heroPanels.urls2 = "";
 
             String str;
             while ((str = in.readLine()) != null) {
-                testPage.urls2 = testPage.urls2 + str;
+                heroPanels.urls2 = heroPanels.urls2 + str;
             }
             in.close();
 
-            JSONObject WvW =  new JSONObject(testPage.urls2);
+            JSONObject WvW =  new JSONObject(heroPanels.urls2);
 
             JSONArray maps = WvW.getJSONArray("maps");
 
